@@ -1,0 +1,504 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>게임물관리위원회</title>
+    <link rel="stylesheet" type="text/css" href="../css/grac/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/grac/css/rem.css" />
+    <link rel="stylesheet" type="text/css" href="../css/grac/css/common.css" />
+    <script type="text/javascript" src="../js/grac/scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../js/grac/scripts/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <section>
+                <h1 class="logo"><a href="#"><img src="../images/grac/images/common/logo.png" /></a></h1>
+                <nav>
+                    <ul>
+                        <li class="menu1">
+                            <a href="#">게임물관련사업자교육</a>
+                            <ol>
+                                <li><a href="#">청소년게임제공업</a></li>
+                                <li><a href="#">인터넷컴퓨터게임시설제공업</a></li>
+                                <li><a href="#">일반게임제공업</a></li>
+                                <li><a href="#">복합유통게임제공업</a></li>
+                                <li><a href="#">게임제작업</a></li>
+                                <li><a href="#">게임배급업</a></li>
+                            </ol>
+                        </li>
+                        <li class="menu2">
+                            <a href="#">자체등급분류사업자교육</a>
+                            <ol>
+                                <li><a href="#">교육신청 및 일정</a></li>
+                            </ol>
+                        </li>
+                        <li class="menu3">
+                            <a href="#">공무원맞춤교육</a>
+                            <ol>
+                                <li><a href="#">교육신청 및 일정</a></li>
+                            </ol>
+                        </li>
+                        <li class="menu4">
+                            <a href="#">게임물이용자교육</a>
+                            <ol>
+                                <li><a href="#">상시학습</a></li>
+                            </ol>
+                        </li>
+                        <li class="menu5">
+                            <a href="#">소통공간</a>
+                            <ol>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">자주하는 질문</a></li>
+                                <li><a href="#">자료실</a></li>
+                                <li><a href="#">Q&amp;A</a></li>
+                            </ol>
+                        </li>
+                        <li class="all">
+                            <a href="#" class="open"><img src="../images/grac/images/common/icon_all_menu.png" /></a>
+                            <a href="#" class="close"><img src="../images/grac/images/common/icon_all_menu_close.png" /></a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="util">
+                    <!--로그인전-->
+                    <li><a href="#"><img src="../images/grac/images/common/icon_login.png" />로그인</a></li>
+                    <li><a href="#"><img src="../images/grac/images/common/icon_join.png" />회원가입</a></li>
+                    <!--//로그인전-->
+                    <!--로그인 후-->
+                    <li class="loginAfter" style="display: none;">
+                        <a href="#" class="userId"><img src="../images/grac/images/common/icon_login.png" /><span>이순신</span> 님</a>
+                        <a href="#" class="logout"><i>&nbsp;</i>로그아웃<i>&nbsp;</i></a>
+                        <a href="#" class="mypage">마이페이지</a>
+                        <div class="drop">
+                            <span>마이페이지</span>
+                            <ul>
+                                <li><a href="#">나의 학습방</a></li>
+                                <li><a href="#">회원정보관리</a></li>
+                                <li><a href="#">교육대상자관리</a></li>
+                                <li><a href="#">사업자교육결과확인</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--//로그인 후-->
+                </ul>
+                <!--MO-->
+                <ul class="moUtil">
+                    <li><a href="#"><img src="../images/grac/images/common/svg/icon_login.svg" /></a></li>
+                    <li><a href="#" class="menuOpen"><img src="../images/grac/images/common/svg/icon_all_menu.svg" /></a></li>
+                </ul>
+                <!--//MO-->
+            </section>
+            <!--전체메뉴-->
+            <div class="allMenuWrap">
+                <div class="list">
+                    <div class="part1"></div>
+                    <div class="part2">
+                        <div class="p1"></div>
+                        <div class="p2"></div>
+                    </div>
+                    <div class="part3">
+                        <div class="p1"></div>
+                        <div class="p2"></div>
+                    </div>
+                </div>
+            </div>
+            <!--//전체메뉴-->
+            <!--모바일메뉴-->
+            <div class="mobileNav">
+                <!--Top-->
+                <div class="topCnt">
+                    <ul>
+                        <!--로그인전-->
+                        <li class="loginBefore">
+                            <a href="#" class="login">로그인</a>
+                            <a href="#">회원가입</a>
+                            <a href="#">마이페이지</a>
+                        </li>
+                        <!--로그인전-->
+                        <!--로그인후-->
+                        <li class="loginAfter" style="display:none">
+                            <a href="#" class="userId"><span>이순신</span> 님</a>
+                            <a href="#">로그아웃</a>
+                            <a href="#">마이페이지</a>
+                        </li>
+                        <!--//로그인후-->
+                    </ul>
+                    
+                    <div>
+                        
+                    </div>
+                    <span class="close">메뉴닫기</span>
+                </div>
+                <article>
+                    <div class="favoriteMenu">
+                        <h5>FAVORITE MENU</h5>
+                        <a href="#" class="menuAdd">MENU PLUS<i><img src="../images/grac/images/common/icon_plus_black.png"></i></a>
+                        <ul class="list">
+                            <!--Set-->
+                            <li>
+                                <i><img src="../images/grac/images/icon_menuplus1.png"></i>
+                                <span>청소년게임<br>제공업</span>
+                            </li>
+                            <!--//Set-->
+                            <!--Set-->
+                            <li>
+                                <i><img src="../images/grac/images/icon_menuplus2.png"></i>
+                                <span>인터넷컴퓨터<br>게임시설제공업</span>
+                            </li>
+                            <!--//Set-->
+                            <!--Set-->
+                            <li>
+                                <i><img src="../images/grac/images/icon_menuplus10.png"></i>
+                                <span>나의 학습방</span>
+                            </li>
+                            <!--//Set-->
+                            <!--Set-->
+                            <li>
+                                <i><img src="../images/grac/images/icon_menuplus15.png"></i>
+                                <span>자주하는 질문</span>
+                            </li>
+                            <!--//Set-->
+                            <!--Set-->
+                            <li class="add">
+                                <i><img src="../images/grac/images/icon_pius.png"></i>
+                            </li>
+                            <!--//Set-->
+                            <!--Set-->
+                            <li class="add">
+                                <i><img src="../images/grac/images/icon_pius.png"></i>
+                            </li>
+                            <!--//Set-->
+                        </ul>
+                    </div>
+                    <!--//Top-->
+                    <div class="menuList"></div>
+                </article>
+            </div>
+            <!--//모바일메뉴-->
+        </header>
+        <!--Container-->
+        <link rel="stylesheet" type="text/css" href="../css/grac/css/visitStudy.css" />
+        <script type="text/javascript" src="../js/grac/scripts/visitStudy.js"></script>
+        <div class="container sub visitStudy">
+            <!--Content-->
+            <section class="content">
+                <form>
+                    <!--상단(공통)-->
+                    <article class="topCnt">
+                        <h4 class="commPageTitle">방문 교육 신청</h4>
+                    </article>
+                    <!--//상단(공통)-->
+                    <!--신청정보-->
+                    <fieldset class="applyInfo">
+                        <h6 class="p_tit">신청정보</h6>
+                        <table>
+                            <colgroup>
+                                <col width="220"/>
+                                <col width="*"/>
+                            </colgroup>
+                            <tr class="agency">
+                                <th>학교/기관(단체명)명<i>*</i></th>
+                                <td><input type="text" class="inputText" placeholder="정식 명칭 입력"/></td>
+                            </tr>
+                            <tr class="location">
+                                <th>소재지<i>*</i></th>
+                                <td>
+                                    <select class="selectDrop">
+                                        <option>시도 선택</option>
+                                    </select>
+                                    <select class="selectDrop">
+                                        <option>시군구 선택</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="method">
+                                <th>교육방식<i>*</i></th>
+                                <td>
+                                    <div class="checkBox">
+                                        <input type="radio" name="method" id="methodChk1"/>
+                                        <i>&nbsp;</i>
+                                        <label for="methodChk1">대면</label>
+                                    </div>
+                                    <div class="checkBox">
+                                        <input type="radio" name="method" id="methodChk2"/>
+                                        <i>&nbsp;</i>
+                                        <label for="methodChk2">비대면 (교실 등-재택)</label>
+                                    </div>
+                                    <div class="checkBox">
+                                        <input type="radio" name="method" id="methodChk3"/>
+                                        <i>&nbsp;</i>
+                                        <label for="methodChk3">비대면 (스튜디오-재택)</label>
+                                    </div>
+                                    <p>* 교육을 수행하는 장소-교육대상자의 장소</p>
+                                </td>
+                            </tr>
+                            <tr class="equp">
+                                <th>교육 기자재 보유 여부<i>*</i></th>
+                                <td>
+                                    <div class="checkBox">
+                                        <input type="checkbox" name="equp" id="equpChk1"/>
+                                        <i>&nbsp;</i>
+                                        <label for="equpChk1">컴퓨터</label>
+                                    </div>
+                                    <div class="checkBox">
+                                        <input type="checkbox" name="equp" id="equpChk2"/>
+                                        <i>&nbsp;</i>
+                                        <label for="equpChk2">스크린/TV모니터 등</label>
+                                    </div>
+                                    <div class="checkBox">
+                                        <input type="checkbox" name="equp" id="equpChk3"/>
+                                        <i>&nbsp;</i>
+                                        <label for="equpChk3">빔 프로젝터</label>
+                                    </div>
+                                    <div class="checkBox">
+                                        <input type="checkbox" name="equp" id="equpChk4"/>
+                                        <i>&nbsp;</i>
+                                        <label for="equpChk4">무선인터넷 (와이파이)</label>
+                                        <span class="text">* 게임구동가능</span>
+                                    </div>
+                                    <div class="checkBox">
+                                        <input type="checkbox" name="equp" id="equpChk5"/>
+                                        <i>&nbsp;</i>
+                                        <label for="equpChk5">태블릿 PC</label>
+                                        <div class="ea">(<input type="text" placeholder="0"/>대)</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="request">
+                                <th>요청사항</th>
+                                <td>
+                                    <textarea placeholder="교육 시 필요한 사항 입력"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <!--//신청정보-->
+                    <!--교육 담당자 정보-->
+                    <fieldset class="mngInfo">
+                        <h6 class="p_tit">교육 담당자 정보</h6>
+                        <table>
+                            <colgroup>
+                                <col width="220"/>
+                                <col width="*"/>
+                            </colgroup>
+                            <tr>
+                                <th>이름<i>*</i></th>
+                                <td><input type="text" class="inputText" placeholder="이름"/></td>
+                            </tr>
+                            <tr>
+                                <th>직위<i>*</i></th>
+                                <td><input type="text" class="inputText" placeholder="직위"/></td>
+                            </tr>
+                            <tr>
+                                <th>직장 연락처<i>*</i></th>
+                                <td><input type="text" class="inputText" placeholder="직장 연락처"/></td>
+                            </tr>
+                            <tr>
+                                <th>핸드폰 번호</th>
+                                <td><input type="text" class="inputText" placeholder="핸드폰 번호"/></td>
+                            </tr>
+                            <tr>
+                                <th>이메일<i>*</i></th>
+                                <td><input type="text" class="inputText" placeholder="이메일"/></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <!--//교육 담당자 정보-->
+                    <!--교육정보(기본)-->
+                    <fieldset class="eduInfo">
+                        <h6 class="p_tit">교육정보</h6>
+                        <div>
+                            <table>
+                                <colgroup>
+                                    <col width="220"/>
+                                    <col width="325"/>
+                                    <col width="220"/>
+                                    <col width="*"/>
+                                </colgroup>
+                                <tr>
+                                    <th>신청 프로그램<i>*</i></th>
+                                    <td colspan="3"><input type="text" class="inputText" placeholder="신청 프로그램"/></td>
+                                </tr>
+                                <tr>
+                                    <th>교육유형<i>*</i></th>
+                                    <td colspan="3">
+                                        <div class="checkBox">
+                                            <input type="radio" name="type" id="typeChk1_1"/>
+                                            <i>&nbsp;</i>
+                                            <label for="typeChk1_1">강연형 (1차시)</label>
+                                        </div>
+                                        <div class="checkBox">
+                                            <input type="radio" name="type" id="typeChk1_2"/>
+                                            <i>&nbsp;</i>
+                                            <label for="typeChk1_2">체험형 (2차시)</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>교육장소<i>*</i></th>
+                                    <td colspan="3"><input type="text" class="inputText" placeholder="교육장소"/></td>
+                                </tr>
+                                <tr>
+                                    <th>교육대상자<i>*</i></th>
+                                    <td colspan="3"><input type="text" class="inputText" placeholder="교육대상자 (예: 00초등학교 3학년 1반)"/></td>
+                                </tr>
+                                <tr>
+                                    <th>교육 희망일시<i>*</i></th>
+                                    <td colspan="3">
+                                        <!--날짜-->
+                                        <div class="cal">
+                                            <input type="text" class="inputText" readonly="readonly" value="2021.05.15"/>
+                                            <button type="button">선택</button>
+                                        </div>
+                                        <!--//날짜-->
+                                        <!--시간-->
+                                        <div class="time">
+                                            <select class="selectDrop">
+                                                <option>선택</option>
+                                            </select>
+                                            <span>~</span>
+                                            <select class="selectDrop">
+                                                <option>선택</option>
+                                            </select>
+                                        </div>
+                                        <!--//시간-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>연령 (학년, 학부모)<i>*</i></th>
+                                    <td><input type="text" class="inputText" placeholder="연령"/></td>
+                                    <th>신청인원<i>*</i></th>
+                                    <td><input type="number" class="inputText" placeholder="신청인원 숫자입력" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="ctrl_btn">
+                            <button type="button" class="add">추가하기</button>
+                        </p>
+                    </fieldset>
+                    <!--//교육정보(기본)-->
+                    <!--교육정보(추가)-->
+                    <fieldset class="eduInfo addField">
+                        <h6 class="p_tit">교육정보</h6>
+                        <div>
+                            <table>
+                                <colgroup>
+                                    <col width="220"/>
+                                    <col width="325"/>
+                                    <col width="220"/>
+                                    <col width="*"/>
+                                </colgroup>
+                                <tr>
+                                    <th>신청 프로그램<i>*</i></th>
+                                    <td colspan="3"><input type="text" class="inputText" placeholder="신청 프로그램"/></td>
+                                </tr>
+                                <tr>
+                                    <th>교육유형<i>*</i></th>
+                                    <td colspan="3">
+                                        <div class="checkBox">
+                                            <input type="radio" name="type2" id="typeChk2_1"/>
+                                            <i>&nbsp;</i>
+                                            <label for="typeChk2_1">강연형 (1차시)</label>
+                                        </div>
+                                        <div class="checkBox">
+                                            <input type="radio" name="type2" id="typeChk2_2"/>
+                                            <i>&nbsp;</i>
+                                            <label for="typeChk2_2">체험형 (2차시)</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>교육장소<i>*</i></th>
+                                    <td colspan="3"><input type="text" class="inputText" placeholder="교육장소"/></td>
+                                </tr>
+                                <tr>
+                                    <th>교육대상자<i>*</i></th>
+                                    <td colspan="3"><input type="text" class="inputText" placeholder="교육대상자 (예: 00초등학교 3학년 1반)"/></td>
+                                </tr>
+                                <tr>
+                                    <th>교육 희망일시<i>*</i></th>
+                                    <td colspan="3">
+                                        <!--날짜-->
+                                        <div class="cal">
+                                            <input type="text" class="inputText" readonly="readonly" value="2021.05.15"/>
+                                            <button type="button">선택</button>
+                                        </div>
+                                        <!--//날짜-->
+                                        <!--시간-->
+                                        <div class="time">
+                                            <select class="selectDrop">
+                                                <option>선택</option>
+                                            </select>
+                                            <span>~</span>
+                                            <select class="selectDrop">
+                                                <option>선택</option>
+                                            </select>
+                                        </div>
+                                        <!--//시간-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>연령 (학년, 학부모)<i>*</i></th>
+                                    <td><input type="text" class="inputText" placeholder="연령"/></td>
+                                    <th>신청인원<i>*</i></th>
+                                    <td><input type="number" class="inputText" placeholder="신청인원 숫자입력" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="ctrl_btn">
+                            <button type="button" class="add">추가하기</button>
+                            <button type="button" class="del">삭제하기</button>
+                        </p>
+                    </fieldset>
+                    <!--//교육정보(추가)-->
+                    <div class="btnArea">
+                        <button type="button" class="white">취소</button>
+                        <button type="button" class="cyan">신청</button>
+                    </div>
+                </form>
+            </section>
+            <!--//Content-->
+        </div>
+        <!--//Container-->
+        <footer>
+            <article>
+                <!--Family Site-->
+                <div class="familySite">
+                    <select>
+                        <option>관련사이트</option>
+                        <option value="http://www.oidd.co.kr/">운영정보표시장치사업단</option>
+                        <option value="https://www.gcrb.or.kr">GCRB</option>
+                        <option value="https://www.grac.or.kr/AfterTheFack/PosangStatementGuide01.aspx">불법게임물신고포상금</option>
+                        <option value="http://www.mcst.go.kr/main.jsp">문화체육관광부</option>
+                        <option value="http://www.gamek.or.kr/">한국게임산업협회</option>
+                        <option value="http://www.gucc.or.kr/">게임이용자보호센터</option>
+                        <option value="http://www.copyright.or.kr/main.do">한국저작권위원회</option>
+                        <option value="http://www.kmrb.or.kr/main.do">영상물등급위원회</option>
+                        <option value="http://www.acrc.go.kr/acrc/index.do">국민권익위원회</option>
+                        <option value="https://www.gov.kr/portal/main">정부24</option>
+                        <option value="https://www.sinmungo.go.kr/sz.sinmungo.RegulPrpslIsF.laf?link_mini_cd=1371000">규제제도개선건의</option>
+                        <option value="http://www.alio.go.kr/home.do">경영개선신고센터</option>
+                        <option value="https://www.safetyreport.go.kr/#main">안전신문고</option>
+                        <option value="http://1398.acrc.go.kr/case/ISGAcase">청탁금지법 통합검색 서비스</option>
+                        <option value="https://1398.acrc.go.kr">부패행위·채용비리 신고</option>
+                        <option value="https://www.mcst.go.kr/kor/s_policy/culturevision2030/culturevision2030.jsp">문화비전2030</option>
+                    </select>
+                </div>
+                <!--//Family Site-->
+                <ul class="termsLink">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li class="dot">&nbsp;</li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="dot">&nbsp;</li>
+                    <li><a href="#">홈페이지 저작권 정책</a></li>
+                </ul>
+                <p class="adrs"><span>[48058] 부산광역시 해운대구 센텀서로 39, 2층</span><span>Tel : 051-720-6800 Fax : 051-720-6889</spn></p>
+                <p class="copyright">CopyrightⓒGame Rating And Administration Committee.<span>All Rights Reserved.</span></p>
+            </article>
+        </footer>
+    </div>
+</body>
+</html>

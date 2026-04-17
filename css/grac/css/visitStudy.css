@@ -1,0 +1,93 @@
+﻿@charset "utf-8";
+.visitStudy .content{padding:145px 0 120px 0}
+.visitStudy form{width:1060px;margin:0 auto}
+.visitStudy article{width:100%}
+.visitStudy fieldset{text-align:left}
+.visitStudy h4.commPageTitle{font-size:34px}
+.visitStudy h6.p_tit{width:100%;display:inline-block;margin:40px 0 26px 0;line-height:55px;border-bottom:2px solid #101010;font-size:16px}
+.visitStudy th{padding:14px 0 14px 40px;font-size:16px;text-align:left;vertical-align:top;line-height:50px}
+.visitStudy th i{color:#ff2828;display:inline-block;line-height:1;margin-left:5px}
+.visitStudy td{padding:14px 40px 14px 0;text-align:left}
+.visitStudy td .checkBox{margin-right:40px}
+.visitStudy td .selectDrop{background-image:url(../../../images/grac/images/icon_black_down_arrow2.png)}
+.visitStudy tr.location .selectDrop{width:390px}
+.visitStudy tr.location .selectDrop:last-child{float:right}
+.visitStudy .checkBox label{font-size:16px;padding-left:40px}
+.visitStudy .applyInfo,
+.visitStudy .mngInfo,
+.visitStudy .eduInfo > div{padding-bottom:26px;border-bottom:1px solid #e0e0e0}
+.visitStudy .applyInfo .method p{font-size:12px;font-weight:800;color:#ff4114;margin-top:27px}
+.visitStudy .applyInfo .method th{line-height:1;padding-top:17px}
+.visitStudy .applyInfo .equp .checkBox:nth-child(4){margin-right:0}
+.visitStudy .applyInfo .equp th{line-height:1;padding-top:17px}
+.visitStudy .applyInfo .equp div.ea{font-size:16px;color:#101010;display:inline-block;vertical-align:middle}
+.visitStudy .applyInfo .equp div.ea input[type='text']{height:30px;width:62px;border-radius:3px;border:1px solid #e0e0e0;padding:0 10px;margin:0 5px}
+.visitStudy .applyInfo .equp div.ea input[type='text']::placeholder{color:#ccc}
+.visitStudy .applyInfo .equp .checkBox:nth-child(5){margin-top:28px;margin-right:0}
+.visitStudy .applyInfo .request textarea{width:100%;height:110px;border-radius:3px;border:1px solid #e0e0e0;padding:18px;line-height:1.2;font-size:16px;resize:none}
+.visitStudy .applyInfo .request textarea::placeholder{color:#ccc}
+.visitStudy .eduInfo .cal{width:256px;float:left;position:relative}
+.visitStudy .eduInfo .cal .inputText{padding-right:63px}
+.visitStudy .eduInfo .cal button{width:48px;height:48px;position:absolute;top:0;right:7px;border:none;background:url(../../../images/grac/images/icon_sort_calendar.png) no-repeat center center;text-indent:-9999px}
+.visitStudy .eduInfo .time{float:right;text-align:center}
+.visitStudy .eduInfo .time select{width:252px}
+.visitStudy .eduInfo .time select:first-child{float:left}
+.visitStudy .eduInfo .time select:last-child{float:right}
+.visitStudy .eduInfo .time span{display:inline-block;margin:0 5px;line-height:50px}
+.visitStudy .eduInfo .ctrl_btn{text-align:right;margin-top:20px}
+.visitStudy .eduInfo .ctrl_btn button{width:100px;height:50px;font-size:16px;border-radius:3px;border:none}
+.visitStudy .eduInfo button.add{background:#434343;color:#fff}
+.visitStudy .eduInfo button.del{background:#fff;color:#101010;border:1px solid #101010}
+.visitStudy .btnArea{text-align:center;margin-top:100px;width:100%;display:inline-block}
+.visitStudy .btnArea button{width:200px;height:60px;font-size:18px;font-weight:700;margin:0 8px;border-radius:3px}
+.visitStudy .btnArea button.white{border:1px solid #e0e0e0;background:#fff}
+.visitStudy .btnArea button.cyan{border:1px solid #20bdbe;background:#20bdbe;color:#fff}
+
+
+@media all and (max-width:1280px){
+}
+@media all and (max-width:812px){
+    .visitStudy .content{padding:12rem 0 20rem 0}
+    .visitStudy form{width:100%}
+    .visitStudy fieldset{padding:0 4rem}
+    .visitStudy h4.commPageTitle{font-size:4.2rem}
+    .visitStudy h6.p_tit{margin:4.4rem 0 4rem 0;line-height:5.8rem;border-bottom:0.2rem solid #101010;font-size:2.6rem}
+    .visitStudy colgroup{display:none}
+    .visitStudy th{padding:0;font-size:2.2rem;line-height:6rem;display:block}
+    .visitStudy th i{margin-left:1rem}
+    .visitStudy td{padding:0;padding-bottom:2rem;display:inline-block;width:100%}
+    .visitStudy td .selectDrop{width:100%}
+    .visitStudy td .checkBox{margin-right:0;width:50%;float:left}
+    .visitStudy td .checkBox label{padding-left:4.5rem;font-size:2.4rem;font-weight:700}
+    .visitStudy .applyInfo,
+    .visitStudy .mngInfo,
+    .visitStudy .eduInfo > div{padding-bottom:0;border:none}
+    .visitStudy tr.location .selectDrop{width:100%}
+    .visitStudy tr.location .selectDrop:first-child{margin-bottom:2rem}
+    .visitStudy tr.location .selectDrop:last-child{float:none}
+    .visitStudy .applyInfo .method th{line-height:6rem;padding-top:0}
+    .visitStudy .applyInfo .method .checkBox:first-child{margin-bottom:4rem}
+    .visitStudy .applyInfo .method .checkBox:nth-child(2){margin-bottom:4rem}
+    .visitStudy .applyInfo .method p{font-size:2.2rem;margin-top:2rem;width:100%;display:inline-block}
+    .visitStudy .applyInfo .equp th{line-height:6rem;padding-top:0}
+    .visitStudy .applyInfo .equp .checkBox{margin-bottom:4rem}
+    .visitStudy .applyInfo .equp .checkBox:last-child{margin:0;height:auto}
+    .visitStudy .applyInfo .equp .checkBox span.text{width:100%;display:inline-block;font-size:2.4rem;color:#767676;padding-left:4rem}
+    .visitStudy .applyInfo .equp div.ea{padding-left:4rem;font-size:2.4rem;font-weight:700;margin-top:1rem}
+    .visitStudy .applyInfo .equp div.ea input[type='text']{height:5.8rem;width:14.4rem;border-radius:0.3rem;padding:0 2.5rem;margin:0 2rem}
+    .visitStudy .applyInfo .request td{padding-bottom:6rem;border-bottom:1px solid #e0e0e0}
+    .visitStudy .applyInfo .request textarea{height:14rem;border-radius:0.3rem;padding:2rem;font-size:2.8rem}
+    .visitStudy .mngInfo tr:last-child td{padding-bottom:6rem;border-bottom:1px solid #e0e0e0}
+    .visitStudy .eduInfo tr:last-child td:last-child{padding-bottom:6rem;border-bottom:1px solid #e0e0e0}
+    .visitStudy .eduInfo .cal{width:100%;margin-bottom:2rem}
+    .visitStudy .eduInfo .cal .inputText{padding-right:8.4rem}
+    .visitStudy .eduInfo .cal button{width:8.4rem;height:7.6rem;right:0;background:url(../../../images/grac/images/svg/icon_sort_calendar_mo.svg) no-repeat center center;background-size:3rem}
+    .visitStudy .eduInfo .time{width:100%;display:inline-block}
+    .visitStudy .eduInfo .time select{width:45%}
+    .visitStudy .eduInfo .time span{margin:0;line-height:7.7rem;font-size:2.8rem}
+    .visitStudy .eduInfo .ctrl_btn{margin-top:2rem}
+    .visitStudy .eduInfo .ctrl_btn button{width:14.8rem;height:7.8rem;font-size:2.4rem;border-radius:0.3rem}
+    .visitStudy .btnArea{margin-top:14rem;padding:0 4rem}
+    .visitStudy .btnArea button{width:100%;height:8.8rem;font-size:2.8rem;margin:0;border-radius:0.3rem}
+    .visitStudy .btnArea button.white{margin-bottom:2rem}
+}

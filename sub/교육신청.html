@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>게임물관리위원회</title>
+    <link rel="stylesheet" type="text/css" href="../css/grac/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/grac/css/rem.css" />
+    <link rel="stylesheet" type="text/css" href="../css/grac/css/common.css" />
+    <script type="text/javascript" src="../js/grac/scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../js/grac/scripts/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <section>
+                <h1 class="logo"><a href="#"><img src="../images/grac/images/common/logo.png" /></a></h1>
+                <nav>
+                    <ul>
+                        <li class="menu1">
+                            <a href="#">게임물관련사업자교육</a>
+                            <ol>
+                                <li><a href="#">청소년게임제공업</a></li>
+                                <li><a href="#">인터넷컴퓨터게임시설제공업</a></li>
+                                <li><a href="#">일반게임제공업</a></li>
+                                <li><a href="#">복합유통게임제공업</a></li>
+                                <li><a href="#">게임제작업</a></li>
+                                <li><a href="#">게임배급업</a></li>
+                            </ol>
+                        </li>
+                        <li class="menu2">
+                            <a href="#">자체등급분류사업자교육</a>
+                            <ol>
+                                <li><a href="#">교육신청 및 일정</a></li>
+                            </ol>
+                        </li>
+                        <li class="menu3">
+                            <a href="#">공무원맞춤교육</a>
+                            <ol>
+                                <li><a href="#">교육신청 및 일정</a></li>
+                            </ol>
+                        </li>
+                        <li class="menu4">
+                            <a href="#">게임물이용자교육</a>
+                            <ol>
+                                <li><a href="#">상시학습</a></li>
+                            </ol>
+                        </li>
+                        <li class="menu5">
+                            <a href="#">소통공간</a>
+                            <ol>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">자주하는 질문</a></li>
+                                <li><a href="#">자료실</a></li>
+                                <li><a href="#">Q&amp;A</a></li>
+                            </ol>
+                        </li>
+                        <li class="all">
+                            <a href="#" class="open"><img src="../images/grac/images/common/icon_all_menu.png" /></a>
+                            <a href="#" class="close"><img src="../images/grac/images/common/icon_all_menu_close.png" /></a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="util">
+                    <!--로그인전-->
+                    <li><a href="#"><img src="../images/grac/images/common/icon_login.png" />로그인</a></li>
+                    <li><a href="#"><img src="../images/grac/images/common/icon_join.png" />회원가입</a></li>
+                    <!--//로그인전-->
+                    <!--로그인 후-->
+                    <li class="loginAfter" style="display: none;">
+                        <a href="#" class="userId"><img src="../images/grac/images/common/icon_login.png" /><span>이순신</span> 님</a>
+                        <a href="#" class="logout"><i>&nbsp;</i>로그아웃<i>&nbsp;</i></a>
+                        <a href="#" class="mypage">마이페이지</a>
+                        <div class="drop">
+                            <span>마이페이지</span>
+                            <ul>
+                                <li><a href="#">나의 학습방</a></li>
+                                <li><a href="#">회원정보관리</a></li>
+                                <li><a href="#">교육대상자관리</a></li>
+                                <li><a href="#">사업자교육결과확인</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--//로그인 후-->
+                </ul>
+                <!--MO-->
+                <ul class="moUtil">
+                    <li><a href="#"><img src="../images/grac/images/common/svg/icon_login.svg" /></a></li>
+                    <li><a href="#" class="menuOpen"><img src="../images/grac/images/common/svg/icon_all_menu.svg" /></a></li>
+                </ul>
+                <!--//MO-->
+            </section>
+            <!--전체메뉴-->
+            <div class="allMenuWrap">
+                <div class="list">
+                    <div class="part1"></div>
+                    <div class="part2">
+                        <div class="p1"></div>
+                        <div class="p2"></div>
+                    </div>
+                    <div class="part3">
+                        <div class="p1"></div>
+                        <div class="p2"></div>
+                    </div>
+                </div>
+            </div>
+            <!--//전체메뉴-->
+            <!--모바일메뉴-->
+            <div class="mobileNav">
+                <!--Top-->
+                <div class="topCnt">
+                    <ul>
+                        <!--로그인전-->
+                        <li class="loginBefore">
+                            <a href="#" class="login">로그인</a>
+                            <a href="#">회원가입</a>
+                            <a href="#">마이페이지</a>
+                        </li>
+                        <!--로그인전-->
+                        <!--로그인후-->
+                        <li class="loginAfter" style="display:none">
+                            <a href="#" class="userId"><span>이순신</span> 님</a>
+                            <a href="#">로그아웃</a>
+                            <a href="#">마이페이지</a>
+                        </li>
+                        <!--//로그인후-->
+                    </ul>
+                    
+                    <div>
+                        
+                    </div>
+                    <span class="close">메뉴닫기</span>
+                </div>
+                <article>
+                    <div class="favoriteMenu">
+                        <h5>FAVORITE MENU</h5>
+                        <a href="#" class="menuAdd">MENU PLUS<i><img src="../images/grac/images/common/icon_plus_black.png"></i></a>
+                        <ul class="list">
+                            <!--Set-->
+                            <li>
+                                <i><img src="../images/grac/images/icon_menuplus1.png"></i>
+                                <span>청소년게임<br>제공업</span>
+                            </li>
+                            <!--//Set-->
+                            <!--Set-->
+                            <li>
+                                <i><img src="../images/grac/images/icon_menuplus2.png"></i>
+                                <span>인터넷컴퓨터<br>게임시설제공업</span>
+                            </li>
+                            <!--//Set-->
+                            <!--Set-->
+                            <li>
+                                <i><img src="../images/grac/images/icon_menuplus10.png"></i>
+                                <span>나의 학습방</span>
+                            </li>
+                            <!--//Set-->
+                            <!--Set-->
+                            <li>
+                                <i><img src="../images/grac/images/icon_menuplus15.png"></i>
+                                <span>자주하는 질문</span>
+                            </li>
+                            <!--//Set-->
+                            <!--Set-->
+                            <li class="add">
+                                <i><img src="../images/grac/images/icon_pius.png"></i>
+                            </li>
+                            <!--//Set-->
+                            <!--Set-->
+                            <li class="add">
+                                <i><img src="../images/grac/images/icon_pius.png"></i>
+                            </li>
+                            <!--//Set-->
+                        </ul>
+                    </div>
+                    <!--//Top-->
+                    <div class="menuList"></div>
+                </article>
+            </div>
+            <!--//모바일메뉴-->
+        </header>
+        <!--Container-->
+        <link rel="stylesheet" type="text/css" href="../css/grac/css/education.css" />
+        <script type="text/javascript" src="../js/grac/scripts/education.js"></script>
+        <div class="container sub education">
+            <!--Location&Share-->
+            <section class="locNshare">
+                <ul>
+                    <li><a href="#"><img src="../images/grac/images/icon_home.png"/></a></li>
+                    <li class="arrow"><img src="../images/grac/images/icon_loca_arrow.png"/></li>
+                    <li><a href="#">게임물관련사업자교육</a></li>
+                    <li class="arrow"><img src="../images/grac/images/icon_loca_arrow.png"/></li>
+                    <li><a href="#">교육신청 및 일정</a></li>
+                </ul>
+                <a href="#" class="share"><img src="../images/grac/images/icon_share.png"/>SHARE</a>
+            </section>
+            <!--//Location&Share-->
+            <!--Content-->
+            <section class="content detailData">
+                <article>
+                    <div class="eduInfo">
+                        <!--강의이미지(썸네일)-->
+                        <div class="visual" style="background-image:url(../images/grac/images/sample/edu_visual.jpg);">&nbsp;</div>
+                        <!--//강의이미지(썸네일)-->
+                        <!--수강신청(Quick)-->
+                        <div class="application">
+                            <!--과정명-->
+                            <div class="applyName">
+                                <p class="part">게임물관련사업자교육</p>
+                                <h6>불법게임물 근절 공익광고 “이렇게 됐지” 불법 프로그램 편 불법게임물 근절 공익광고 </h6>
+                                <div>
+                                    <span class="mark">법정교육</span>
+                                    <span class="point">4.8</span>
+                                </div>
+                            </div>
+                            <!--//과정명-->
+                            <!--수강정보-->
+                            <div class="applyInfo">
+                                <ul>
+                                    <li>
+                                        <i><img src="../images/grac/images/icon_application_1.png"/></i>
+                                        <p class="t1">신청인원/정원</p>
+                                        <p class="t2">125명 / 1,000명</p>
+                                    </li>
+                                    <li>
+                                        <i><img src="../images/grac/images/icon_application_4.png"/></i>
+                                        <p class="t1">교육시간</p>
+                                        <p class="t2">16시간 0분</p>
+                                    </li>
+                                    <li>
+                                        <i><img src="../images/grac/images/icon_application_5.png"/></i>
+                                        <p class="t1">교육기간</p>
+                                        <p class="t2">21.06.18 ~ 21.06.25</p>
+                                    </li>
+                                    <li>
+                                        <i><img src="../images/grac/images/icon_application_6.png"/></i>
+                                        <p class="t1">수료기준</p>
+                                        <p class="t2">진도 80% 이상</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--//수강정보-->
+                            <!--신청기간-->
+                            <div class="applyDate">
+                                <p class="tit"><img src="../images/grac/images/icon_application_5.png"/>신청기간</p>
+                                <p class="term_text">21.05.24 00:00 ~ 21.05.31 23:59</p>
+                                <select class="selectDrop">
+                                    <option>2021.06.22(화) ~ 2021.06.23(수)</option>
+                                </select>
+                                <button type="button" class="applyBtn">수강신청</button>
+                            </div>
+                            <!--//신청기간-->
+                        </div>
+                        <!--//수강신청(Quick)-->
+                        <!--Tab-->
+                        <div class="tab">
+                            <div>
+                                <ul>
+                                    <li><a href=".introduce" class="on">과정소개</a></li>
+                                    <li><a href=".cnt">과정내용</a></li>
+                                    <li><a href=".review">학습후기</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--//Tab-->
+                        <!--과정소개-->
+                        <div class="sec introduce">
+                            <h5>과정소개</h5>
+                            <!--교육기간-->
+                            <dl>
+                                <dt><img src="../images/grac/images/icon_intro_1.png"/></dt>
+                                <dd>
+                                    <p>교육기간</p>
+                                    <p>21.06.18 ~ 21.06.25</p>
+                                </dd>
+                            </dl>
+                            <!--//교육기간-->
+                            <!--인원-->
+                            <dl>
+                                <dt><img src="../images/grac/images/icon_intro_2.png"/></dt>
+                                <dd>
+                                    <p>신청인원/정원</p>
+                                    <p>125명 / 1,000명</p>
+                                </dd>
+                            </dl>
+                            <!--//인원-->
+                            <!--수료기준-->
+                            <dl>
+                                <dt><img src="../images/grac/images/icon_intro_3.png"/></dt>
+                                <dd>
+                                    <p>수료기준</p>
+                                    <p>진도 80% 이상</p>
+                                </dd>
+                            </dl>
+                            <!--//수료기준-->
+                            <div class="text">
+                                쉽게 말씀드리자면, 자바스크립트는 부모, jQuery는 자식 관계입니다. 즉, 주로 사용되는 기능들을 자바스크립트로 만들어진 결과물이 jQuery입니다. 만약 우리가 자바스크립트만 안다고 가정했을 경우, jQuery내에 지원하는 기능들을 모두 만들 수 있겠지만, 그만큼 전문적으로 논리적인 코드를 작성하거나 최적화된 기능을 만들기란 쉽지 않습니다. jQuery는 입문단계에서 빠르고 쉽게 기능을 만들어내서 내가 제작한 사이트에 생명을 불어 넣을 수 있습니다.
+                            </div>
+                        </div>
+                        <!--//과정소개-->
+                        <!--과정내용-->
+                        <div class="sec cnt">
+                            <h5>과정내용</h5>
+                            <!--교육목적-->
+                            <dl>
+                                <dt><img src="../images/grac/images/icon_cnt_1.png"/>교육목적</dt>
+                                <dd>강소기업의 이문화경영을 위해 필요한 리더십 이해, 이문화 이해를 위한 사고의 프레임 확장, 조직화합을 높이는 효과적 커뮤니케이션 스킬 습득, 참여적 회의문화를 통해 변화를 주도하는 조직 만들기</dd>
+                            </dl>
+                            <!--//교육목적-->
+                            <!--교육대상-->
+                            <dl>
+                                <dt><img src="../images/grac/images/icon_cnt_2.png"/>교육대상</dt>
+                                <dd>이문화 조직을 이끄는 모든 글로벌 관리자</dd>
+                            </dl>
+                            <!--//교육대상-->
+                            <!--교육내용-->
+                            <dl>
+                                <dt><img src="../images/grac/images/icon_cnt_3.png"/>교육내용</dt>
+                                <dd>
+                                    <p>강소기업의 이문화경영을 위해 필요한 리더십 이해</p>
+                                    <p>이문화 이해를 위한 사고의 프레임 확장</p>
+                                    <p>조직화합을 높이는 효과적 커뮤니케이션 스킬 습득</p>
+                                    <p>참여적 회의문화를 통해 변화를 주도하는 조직만들기</p>
+                                </dd>
+                            </dl>
+                            <!--//교육내용-->
+                        </div>
+                        <!--//과정내용-->
+                        <!--과정후기-->
+                        <div class="sec review">
+                            <h5>과정후기<span class="point">4.8</span></h5>
+                            <div class="tableData">
+                                <table>
+                                    <!--Set-->
+                                    <tr>
+                                        <td>
+                                            <p class="date"><b>포도</b>21.05.24 16:01</p>
+                                            <div class="textArea">
+                                                <span class="point">4.8</span>
+                                                <p class="text">강소기업의 이문화경영을 위해 필요한 리더십 이해</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!--//Set-->
+                                    <!--Set-->
+                                    <tr>
+                                        <td>
+                                            <p class="date"><b>포도</b>21.05.24 16:01</p>
+                                            <div class="textArea">
+                                                <span class="point">4.8</span>
+                                                <p class="text">강소기업의 이문화경영을 위해 필요한 리더십 이해</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!--//Set-->
+                                </table>
+                            </div>
+                            <!--Paging-->
+                            <div class="Paging">
+                                <a href="#" class="first">첫번째 페이지로 이동</a>
+                                <a href="#" class="prev">이전 페이지로 이동</a>
+                                <ul class="numbers">
+                                    <li class="current">1</li>
+                                    <li><a href="#">2</a></li>
+                                </ul>
+                                <a href="#" class="next">다음 페이지로 이동</a>
+                                <a href="#" class="last">마지막 페이지로 이동</a>
+                            </div>
+                            <!--//Paging-->
+                        </div>
+                        <!--//과정후기-->
+                    </div>
+                </article>
+            </section>
+            <!--//Content-->
+        </div>
+        <!--//Container-->
+        <footer>
+            <article>
+                <!--Family Site-->
+                <div class="familySite">
+                    <select>
+                        <option>관련사이트</option>
+                        <option value="http://www.oidd.co.kr/">운영정보표시장치사업단</option>
+                        <option value="https://www.gcrb.or.kr">GCRB</option>
+                        <option value="https://www.grac.or.kr/AfterTheFack/PosangStatementGuide01.aspx">불법게임물신고포상금</option>
+                        <option value="http://www.mcst.go.kr/main.jsp">문화체육관광부</option>
+                        <option value="http://www.gamek.or.kr/">한국게임산업협회</option>
+                        <option value="http://www.gucc.or.kr/">게임이용자보호센터</option>
+                        <option value="http://www.copyright.or.kr/main.do">한국저작권위원회</option>
+                        <option value="http://www.kmrb.or.kr/main.do">영상물등급위원회</option>
+                        <option value="http://www.acrc.go.kr/acrc/index.do">국민권익위원회</option>
+                        <option value="https://www.gov.kr/portal/main">정부24</option>
+                        <option value="https://www.sinmungo.go.kr/sz.sinmungo.RegulPrpslIsF.laf?link_mini_cd=1371000">규제제도개선건의</option>
+                        <option value="http://www.alio.go.kr/home.do">경영개선신고센터</option>
+                        <option value="https://www.safetyreport.go.kr/#main">안전신문고</option>
+                        <option value="http://1398.acrc.go.kr/case/ISGAcase">청탁금지법 통합검색 서비스</option>
+                        <option value="https://1398.acrc.go.kr">부패행위·채용비리 신고</option>
+                        <option value="https://www.mcst.go.kr/kor/s_policy/culturevision2030/culturevision2030.jsp">문화비전2030</option>
+                    </select>
+                </div>
+                <!--//Family Site-->
+                <ul class="termsLink">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li class="dot">&nbsp;</li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="dot">&nbsp;</li>
+                    <li><a href="#">홈페이지 저작권 정책</a></li>
+                </ul>
+                <p class="adrs"><span>[48058] 부산광역시 해운대구 센텀서로 39, 2층</span><span>Tel : 051-720-6800 Fax : 051-720-6889</spn></p>
+                <p class="copyright">CopyrightⓒGame Rating And Administration Committee.<span>All Rights Reserved.</span></p>
+            </article>
+        </footer>
+    </div>
+</body>
+</html>

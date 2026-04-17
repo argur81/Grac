@@ -1,0 +1,414 @@
+﻿@charset "utf-8";
+/*Layout*/
+#wrap{overflow:hidden}
+section{width:100%;display:block;text-align:center}
+article{width:1280px;display:inline-block;text-align:left;margin:0 auto}
+.container{display:block;position:relative}
+/*Common Object(Type Text)*/
+input.inputText{width:100%;height:50px;border:1px solid #e0e0e0;border-radius:3px;padding:10px 19px;font-size:16px}
+input.inputText::placeholder{color:#ccc}
+/*Common Object(Check Box)*/
+.checkBox{display:inline-block;position:relative;height:20px}
+.checkBox input[type="checkbox"]{position:absolute;left:0;top:0;opacity:0}
+.checkBox input[type="radio"]{position:absolute;left:0;top:0;opacity:0}
+.checkBox i{width:20px;height:20px;border:2px solid #e0e0e0;position:absolute;left:0;top:0;border-radius:2px}
+.checkBox label{padding-left:30px;position:relative;display:inline-block;line-height:20px;color:#101010;cursor:pointer}
+.checkBox label:before{content:'';color:#ccc;position:absolute;left:7px;top:3px;width:5px;height:9px;border-right:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg)}
+.checkBox input[type="checkbox"]:checked + i{border-color:#20bdbe;background:#20bdbe}
+.checkBox input[type="checkbox"]:checked + i + label:before{border-color:#fff}
+.checkBox input[type="radio"]:checked + i{border-color:#20bdbe;background:#20bdbe}
+.checkBox input[type="radio"]:checked + i + label:before{border-color:#fff}
+
+/*Common Object(select)*/
+select.selectDrop{width:100%;background-color:#fff;text-indent:20px;color:#101010;font-size:16px;padding-right:30px;box-sizing:border-box;appearance:none;-webkit-appearance:none;-moz-appearance:none;;background-image:url(../../../images/grac/images/icon_gray_down_arrow.png);background-repeat:no-repeat;background-position:calc(100% - 20px) center;height:50px;border:1px solid #e0e0e0;border-radius:3px}
+select.selectDrop::-ms-expand{display:none}
+/*Common Title*/
+h4.commPageTitle{width:100%;display:inline-block;text-align:center;font-size:48px}
+h5.commSubTitle{width:100%;display:inline-block;color:#767676;text-align:center;margin:30px 0;font-size:18px;font-weight:400;line-height:1.2}
+/*Paging*/
+.Paging{width:100%;text-align:center;margin-top:40px}
+.Paging > a{width:30px;height:30px;display:inline-block;vertical-align:middle;text-indent:-9999px}
+.Paging > a.first{background:url(../../../images/grac/images/common/paging_first.png) no-repeat center center}
+.Paging > a.prev{background:url(../../../images/grac/images/common/paging_prev.png) no-repeat center center;margin-right:25px}
+.Paging > a.next{background:url(../../../images/grac/images/common/paging_next.png) no-repeat center center;margin-left:25px}
+.Paging > a.last{background:url(../../../images/grac/images/common/paging_last.png) no-repeat center center}
+.Paging ul.numbers{display:inline-block;vertical-align:middle}
+.Paging ul.numbers li{width:30px;height:30px;margin:0 14px;display:inline-block;vertical-align:middle}
+.Paging ul.numbers li.current{line-height:28px;border:1px solid #2ac0c1;color:#2ac0c1;border-radius:3px;font-weight:700}
+.Paging ul.numbers li a{line-height:30px;display:block;color:#101010}
+/*Popup*/
+.layerPopup{width:100%;height:100%;position:fixed;left:0;top:0;background:rgba(0,0,0,0.7);z-index:9999}
+.layerPopup .popData{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#fff;border-radius:3px}
+.layerPopup .popData .close{position:absolute;right:20px;top:20px;cursor:pointer}
+/*공통(목록)-Kendo Reset(Grid)*/
+.ListData .tbArea{border-top:2px solid #101010;position:relative;}
+.ListData .tbArea .k-grid{height:auto!important;border:none;border-radius:0;box-shadow:none;box-sizing:border-box}
+.ListData .tbArea .k-grid-header{padding-right:0!important;border-radius:0;border:none;background-color:transparent;box-sizing:border-box}
+.ListData .tbArea .k-grid-header-wrap{border:none;box-sizing:border-box}
+.ListData .tbArea .k-grid-header-wrap thead{box-sizing:border-box}
+.ListData .tbArea .k-grid-header-wrap tr{box-sizing:border-box}
+.ListData .tbArea .k-grid-header-wrap th{border-radius:0;border:none;padding:0;vertical-align:middle;box-sizing:border-box;background-color:#fff}
+.ListData .tbArea .k-grid-header-wrap th.k-header>.k-link{display:inline-block;min-height:inherit;line-height:1;margin:0;padding:0;box-sizing:border-box}
+.ListData .tbArea .k-grid-header-wrap th.k-header>.k-grid-filter{float:none;margin:0;padding:0;position:static;box-sizing:border-box}
+.ListData .tbArea .k-grid-header-wrap th.k-header>.k-grid-filter .k-icon{background:none;width:auto;height:auto}
+.ListData .tbArea .k-grid-content{height:auto!important;overflow-y:visible}
+.ListData .tbArea .k-grid-content tbody{box-sizing:border-box}
+.ListData .tbArea .k-grid-content tr{box-sizing:border-box;background:#fff}
+.ListData .tbArea .k-grid-content td{border:none;padding:0;line-height:1;box-sizing:border-box}
+/*공통(목록)-Kendo Custom(Grid)*/
+.ListData .tbArea .k-grid-header-wrap{border-bottom:1px solid #e0e0e0}
+.ListData .tbArea .k-grid-header-wrap th{position:relative;text-align:center;height:50px;font-size:16px;font-weight:700}
+.ListData .tbArea .k-grid-header-wrap th.k-header>.k-grid-filter{position:absolute;right:0;top:50%;transform:translateY(-50%);line-height:0;display:none}
+.ListData .tbArea .k-grid-header-wrap th.k-header:hover >.k-grid-filter{display:block}
+.ListData .tbArea .k-grid-header-wrap th.k-header>.k-grid-filter .k-icon{background:url(../../../images/grac/images/icon_filter.png) no-repeat;width:12px;height:10px}
+.ListData .tbArea .k-grid-content td{padding:21px 0;text-align:center;line-height:23px;font-size:16px;border-bottom:1px solid #e0e0e0;text-decoration:none!important}
+.ListData .tbArea .k-grid-content td.tit{text-align:left;padding:24px 18px}
+.ListData .tbArea .k-grid-content td.tit a span{font-weight:700;margin-right:10px}
+.ListData .tbArea .k-grid-content td.tit i.end{display:inline-block;border:1px solid #2ac0c1;line-height:28px;padding:0 10px;font-size:14px;color:#2ac0c1;border-radius:3px;margin-left:10px}
+.ListData .tbArea .k-grid-content tr:hover{background:#fbfbfb}
+/*공통(목록)-Kendo Reset(Pager)*/
+.k-pager-sizes{display:none!important}
+.k-pager-info{display:none!important}
+.k-pager-wrap{line-height:1!important;border:none!important;padding:0!important;box-shadow:none!important;background-color:#fff!important}
+.k-pager-wrap>.k-link{min-width:inherit!important;height:auto!important;border:none!important;line-height:1!important;border-radius:0!important;margin:0!important;float:none!important}
+.k-pager-numbers{float:none!important;margin:0!important;box-sizing:border-box!important}
+.k-pager-numbers li span.k-state-selected{line-height:1!important;min-width:inherit!important;border:none!important;border-radius:0!important;margin:0!important;background:#fff!important}
+/*공통(목록)-Kendo Custom(Pager)*/
+.k-pager-wrap{margin-top:50px!important;text-align:center!important}
+.k-pager-wrap>.k-link{width:30px!important;height:30px!important;display:inline-block!important;vertical-align:middle!important;text-indent:-9999px!important}
+.k-pager-wrap>.k-link span{width:30px!important;display:block!important;height:30px!important;box-sizing:border-box!important}
+.k-pager-wrap>.k-link.k-pager-first + .k-link{margin-right:25px!important}
+.k-pager-wrap>.k-link .k-i-seek-w{background:url(../../../images/grac/images/common/paging_first.png) no-repeat center center}
+.k-pager-wrap>.k-link .k-i-arrow-w{background:url(../../../images/grac/images/common/paging_prev.png) no-repeat center center}
+.k-pager-wrap>.k-link .k-i-arrow-e{background:url(../../../images/grac/images/common/paging_next.png) no-repeat center center}
+.k-pager-wrap>.k-link .k-i-seek-e{background:url(../../../images/grac/images/common/paging_last.png) no-repeat center center}
+.k-pager-numbers{display:inline-block!important;vertical-align:middle!important}
+.k-pager-numbers li{width:30px!important;height:30px!important;margin:0 14px!important;display:inline-block!important;vertical-align:middle!important}
+.k-pager-numbers li.k-current-page{display:none!important}
+.k-pager-numbers li span.k-state-selected{width:100%!important;line-height:28px!important;border:1px solid #2ac0c1!important;color:#2ac0c1!important;border-radius:3px!important;font-weight:700!important;display:block!important}
+.k-pager-numbers li a{line-height:30px!important;display:block!important;color:#101010!important}
+.k-pager-numbers + .k-link{margin-left:25px!important}
+/*공통-첨부파일[Kendo])*/
+.addFile .drag_Area{margin-bottom:10px}
+.addFile .drag_Area .area{width:100%;display:inline-block;line-height:1}
+.addFile .drag_Area .area > div{width:100%;display:inline-block;position:relative;background:none;border:none}
+.addFile .drag_Area .area .k-upload{width:100%;background:none;border:none}
+.addFile .drag_Area .area .k-upload .k-dropzone{padding:0;border:none;position:relative}
+.addFile .drag_Area .area .k-upload .k-upload-button{width:100%;height:68px;padding:0;border:1px dashed #ccc;background:#f9f9f9;position:relative;border-radius:3px;}
+.addFile .drag_Area .area .k-upload .k-upload-button input[type='file']{width:100%;height:68px;opacity:0;position:absolute;left:0;top:0;z-index:10;cursor:pointer}
+.addFile .drag_Area .area .k-upload .k-upload-button span{display: none;}
+.addFile .drag_Area .area .k-upload .k-dropzone em{width: 100%;text-align: center;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:16px;color:#767676;visibility: unset;}
+.addFile .drag_Area .area .k-upload .k-dropzone em::after{content: '파일선택';display: inline-block;width:100px;font-weight:700;text-align:center;border-radius:3px;line-height:42px;font-size:16px;color:#101010;padding:0;border:1px solid #e0e0e0;background:#fff}
+.addFile .drag_Area .area .k-upload .k-dropzone strong{text-align: right;font-size: 16px;display: inline-block;position: absolute;right: 10px;top: 50%;transform: translateY(-50%);margin-top: 0;line-height: 1;}
+.addFile .drag_Area .area .k-upload .k-dropzone strong span{display:none}
+.addFile .k-grid.k-widget{height:auto!important;border:none;border-radius:0;width:100%;display:inline-block}
+.addFile .k-grid.k-widget .k-grid-header-wrap{border:none;border-radius:0}
+.addFile .k-grid.k-widget .k-grid-header{background:#f5f5f5;padding-right:0!important}
+.addFile .k-grid.k-widget .k-grid-header th{height:50px;font-size:12px;color:#52504f;text-align:center;border:none;padding:0;vertical-align:middle;background:#f5f5f5;border-radius:0!important;border-top:1px solid #e0e0e0}
+.addFile .k-grid.k-widget .k-grid-content{height:auto!important;overflow-y:auto}
+.addFile .k-grid.k-widget .k-grid-content td{font-size:12px;padding:10px;border:none;border-bottom:1px solid #e0e0e0;text-align:center}
+.addFile .k-grid.k-widget .k-grid-content tr td:first-child{text-align:left;padding:10px}
+.addFile .k-grid.k-widget .k-grid-content tr td:last-child{text-align:right;padding:10px}
+.addFile .k-grid.k-widget .k-grid-content tr td.gridcell a.k-button{width:auto;padding:0 10px;line-height:30px;background:#434343;color:#fff;display:inline-block;font-size:12px;border-radius:3px;vertical-align:middle}
+.addFile .k-grid.k-widget .k-grid-content tr td.gridcell button.k-button{width:auto!important;margin-left:10px;padding:0 10px;line-height:28px;border:1px solid #434343;color:#434343;display:inline-block;font-size:12px;border-radius:3px;vertical-align:middle;background:#fff}
+/*Header*/
+header{width:100%;padding-top:38px;border-bottom:1px solid #e0e0e0}
+header section{padding:19px 3.6%;text-align:left;position:relative}
+header h1.logo{display:inline-block}
+header h1.logo a{line-height:0;display:block}
+header h1.logo a img{width:344px}
+header nav{float:right}
+header nav > ul{width:100%;display:inline-block}
+header nav > ul > li{float:left;position:relative;padding-bottom:15px;margin:0}
+header nav > ul > li > a{text-align:center;line-height:28px;font-size:18px;font-weight:700}
+header nav .menu1,
+header nav .menu3,
+header nav .menu5{margin:0 24px}
+header nav .menu2{margin:0 31px}
+header nav .menu4{margin:0 33px}
+header nav .all{margin-left:33px}
+header nav .all a.close{display:none}
+header nav > ul > li > a:hover{color:#20bdbe}
+header nav ol{width:164px;background:#fff;position:absolute;left:50%;top:32px;transform:translateX(-50%);z-index:9999;border-radius:3px;box-shadow:2px 2px 8px rgba(0,0,0,0.3);padding:20px 0;display:none}
+header nav .menu1 ol{width:224px}
+header nav ol li a{display:block;text-align:center;line-height:38px;font-size:16px}
+header nav ol li a:hover{background:#f7f7f7;color:#20bdbe;font-weight:700}
+header .allMenuWrap{width:100%;position:absolute;left:0;z-index:999;background:#fff;text-align:center;min-height:680px;display:none;z-index: 9999;}
+header .allMenuWrap .list{width:1170px;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center}
+header .allMenuWrap .list > div{width:290px;display:inline-block;text-align:left}
+header .allMenuWrap .list > div.part1{float:left}
+header .allMenuWrap .list > div.part3{float:right}
+header .allMenuWrap .list > div > a{font-size:22px;font-weight:700;padding-bottom:20px;border-bottom:1px solid #101010;display:block}
+header .allMenuWrap .list > div > div > a{font-size:22px;font-weight:700;padding-bottom:20px;border-bottom:1px solid #101010;display:block}
+header .allMenuWrap .list .p1{margin-bottom:60px}
+header .allMenuWrap ol{padding:20px 0}
+header .allMenuWrap ol > li{margin:10px 0}
+header .allMenuWrap ol > li a{line-height:37px;font-size:18px;color:#767676;font-weight:700}
+header .allMenuWrap ol > li a:hover{color:#20bdbe}
+header .moUtil{display:none}
+header .util{display:inline-block;position:absolute;right:3.6%;top:-18px}
+header .util li{display:inline-block;vertical-align:middle;margin-left:35px}
+header .util li a{font-size:14px;color:#767676}
+header .util li a img{margin-right:10px;height:18px}
+header .util li:first-child{margin-left:0}
+header .loginAfter{position:relative}
+header .loginAfter a.userId{color:#101010;font-size:14px;position:relative}
+header .loginAfter a.logout i{background:#e0e0e0;display:inline-block;width:1px;height:10px;vertical-align:middle;margin:0 9px 0 10px}
+header .loginAfter a.mypage{background:url(../../../images/grac/images/icon_black_down_arrow.png) no-repeat right center;background-size:7px;padding-right:15px}
+header .loginAfter .drop{position:absolute;border:1px solid #e0e0e0;background:#f7f8f9;margin-top:14px;padding:27px 14px;width:190px;right:0;border-radius:3px;z-index:9999;display:none}
+header .loginAfter .drop:before{content:'';position:absolute;background:url(../../../images/grac/images/icon_triangle.png)no-repeat top;width:15px;height:10px;top:-10px;right:45px;z-index:1}
+header .loginAfter .drop ul{background:#fff;padding:20px;padding-bottom:0;margin:20px 0 10px;border-radius:3px;width:100%}
+header .loginAfter .drop li{margin-left:0;padding-bottom:20px}
+header .loginAfter .drop li a{color:#505050}
+header .loginAfter .drop li a:hover{border-bottom:1px solid #2ac0c1;padding-bottom:2px;color:#2ac0c1}
+.mobileNav{display:none}
+/*Location&Share*/
+.locNshare{width:100%;padding:0 3.6%;position:relative;text-align:left;display:inline-block;margin:28px 0}
+.locNshare ul{display:inline-block}
+.locNshare ul li{display:inline-block;vertical-align:middle;font-size:16px} 
+.locNshare ul li.arrow{margin:0 10px}
+.locNshare a{font-size:16px}
+.locNshare a.share{float:right}
+.locNshare a.share img{margin-right:10px}
+/*서브 상단컨텐츠 탭*/
+.sub .topCnt .cntTab{width:100%;height:62px;display:inline-block;margin:30px 0;text-align:center}
+.sub .topCnt .cntTab ul{display:inline-block}
+.sub .topCnt .cntTab li{float:left;padding:0 20px}
+.sub .topCnt .cntTab a{display:block;padding:18px 0;border-bottom:4px solid #fff;font-size:22px;font-weight:700;color:#505050;position:relative}
+.sub .topCnt .cntTab a.on{color:#2ac0c1;border-color:#2ac0c1}
+.sub .topCnt .cntTab .count{position:absolute;width:26px;line-height:26px;text-align:center;background:linear-gradient(125deg,#4a77ce,#634dd8);font-size:16px;font-weight:700;color:#fff;border-radius:100%;right:-26px;top:0}
+
+/*갤러리형 목록 타입*/
+.galleryListType div.thumb{height:244px;border-radius:3px;overflow:hidden}
+.galleryListType div.thumb a{display:block;height:244px;background-position:center center;background-repeat:no-repeat;background-size:cover;position:relative}
+.galleryListType div.thumb span.state{line-height:28px;position:absolute;right:8px;top:8px;color:#fff;padding:0 6px;border-radius:3px}
+.galleryListType div.thumb span.state.ready{background:#ffa800}
+.galleryListType div.thumb span.state.ing{background:#101010}
+.galleryListType div.thumb span.state.end{background:#ccc}
+.galleryListType i.part{width:100%;display:inline-block;margin:19px 0 7px 0;color:#767676;font-weight:700}
+.galleryListType a.name{height:45px;margin-bottom:15px;font-size:18px;font-weight:700;line-height:21px;overflow:hidden;display:block; display:-webkit-box;text-overflow:ellipsis;-ms-text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.galleryListType p.lesson{font-size:16px;font-weight:700;color:#2ac0c1;margin-bottom:8px}
+.galleryListType dl.info{width:100%;display:inline-block}
+.galleryListType dl.info dt,
+.galleryListType dl.info dd{color:#505050;float:left;line-height:21px}
+.galleryListType dl.info dt{width:65px}
+.galleryListType dl.info dd{width:calc(100% - 65px);font-weight:700}
+.galleryListType dl.info dd span.point{float:right;padding-left:20px;background:url(../../../images/grac/images/icon_star_s.png) no-repeat left center;color:#767676}
+.galleryListType dl.info dd span.point b{font-weight:800;color:#101010}
+.galleryListType dl.info dd.person{width:100%;color:#101010;font-weight:700}
+.galleryListType dl.info dd.person i.icon{padding-left:30px;background:url(../../../images/grac/images/icon_person.png) no-repeat left center;color:#767676;font-weight:400}
+.galleryListType div.info{width:100%;display:inline-block}
+.galleryListType div.info dt{color:#767676;line-height:30px;float:left;margin-right:10px}
+.galleryListType div.info dd{line-height:30px;float:left}
+.galleryListType div.info dl.person{width:100%;display:inline-block}
+.galleryListType div.info dl.person dt{padding-left:30px;background:url(../../../images/grac/images/icon_application_1.png) no-repeat left center}
+.galleryListType div.info dl.person dd{font-weight:700}
+.galleryListType div.info dl.point1{display:inline-block}
+.galleryListType div.info dl.point1 dt{padding-left:30px;background:url(../../../images/grac/images/icon_check.png) no-repeat left center}
+.galleryListType div.info dl.point1 dd{color:#767676}
+.galleryListType div.info dl.point1 dd b{color:#101010}
+.galleryListType div.info dl.point1 span.point{padding-left:20px;background:url(../../../images/grac/images/icon_star_s_off.png) no-repeat left center}
+.galleryListType div.info dl.point1 span.point.on{background:url(../../../images/grac/images/icon_star_s.png) no-repeat left center}
+.galleryListType div.info dl.point2{display:inline-block;margin-left:35px}
+.galleryListType div.info dl.point2 span.point{padding-left:20px;background:url(../../../images/grac/images/icon_star_s_blue.png) no-repeat left center}
+.galleryListType div.info dl.point2 dd{font-weight:700;position:relative}
+.galleryListType div.info dl.point2 dd a{font-weight:700;line-height:34px;border-radius:3px;padding:0 15px;position:absolute;left:0;top:-2px;background:linear-gradient(90deg,#4e70cf,#5e56d5);color:#fff;white-space:nowrap}
+/*Footer*/
+footer{padding:55px 0;background:#282828;color:#fff;text-align:center}
+footer article{position:relative}
+footer .familySite{position:absolute;right:0;top:0;width:180px;}
+footer .familySite select{width:100%;height:43px;border:none;border-bottom:1px solid #363636;color:#e0e0e0;appearance:none;-webkit-appearance:none;-moz-appearance:none;cursor:pointer;background-color:#282828;background-image:url(../../../images/grac/images/common/icon_plus.png);background-repeat:no-repeat;background-position:right center;}
+footer .familySite select::-ms-expand{display:none}
+
+footer .termsLink{display:inline-block;padding:16px 0}
+footer .termsLink li{display:inline-block;vertical-align:middle}
+footer .termsLink li a{color:#fff}
+footer .termsLink li.dot{margin:0 15px;background:#646464;width:2px;height:2px}
+footer article > p{color:#767676;line-height:21px}
+
+@media all and (max-width:1490px){
+    header nav .menu1,
+    header nav .menu3,
+    header nav .menu5{margin:0 14px}
+    header nav .menu2{margin:0 21px}
+    header nav .menu4{margin:0 23px}
+    header nav .all{margin-left:23px}
+}
+@media all and (max-width:1380px){
+    header section{padding:19px 1%}
+    header .util{right:1%}
+    header nav .menu1,
+    header nav .menu3,
+    header nav .menu5{margin:0 9px}
+    header nav .menu2{margin:0 16px}
+    header nav .menu4{margin:0 18px}
+    header nav .all{margin-left:18px}
+    /*Location&Share*/
+    .locNshare{padding:0 1%}
+}
+@media all and (max-width:1280px){
+    header h1.logo a img{width:280px}
+    header nav > ul > li > a{font-size:17px;line-height:23px}
+    header nav .all a img{width:25px}
+    header .allMenuWrap .list{width:100%}
+    header .allMenuWrap .list > div{width:33.33%;padding:0 20px}
+    header .allMenuWrap .list > div > a{font-size:18px}
+    header .allMenuWrap .list > div > div > a{font-size:18px}
+    header .allMenuWrap ol > li a{font-size:16px;line-height:30px}
+    article{width:100%;padding:0 20px}
+    footer .familySite p{right:20px}
+}
+@media all and (max-width:1150px){
+    header h1.logo a img{width:250px}
+    header .util li{margin-left:20px}
+    header nav > ul > li > a{font-size:16px;line-height:23px}
+    header nav .all a img{width:20px}
+    header nav ol{padding:10px 0;height:auto!important}
+    header nav ol li a{font-size:14px;line-height:30px}
+}
+@media all and (max-width:1060px){
+    header{padding-top:25px}
+    header .util{top:-10px}
+    header .util li a{font-size:12px}
+    header nav > ul > li > a{font-size:14px;line-height:23px}
+    header nav ol li a{font-size:12px;line-height:24px}
+}
+@media all and (max-width:812px){
+    article{padding:0 4rem}
+    /*Common Object(Check Box)*/
+    .checkBox{height:2.8rem}
+    .checkBox label{line-height:3.6rem;padding-left:2rem}
+    .checkBox label:before{left:0.8rem;top:0.8rem}
+    .checkBox i{width:2.6rem;height:2.6rem;border-radius:0.2rem;top:0.5rem}
+    /*Common Object(Type Text)*/
+    input.inputText{height:7.7rem;border-radius:0.3rem;padding:2.5rem 2.8rem;font-size:2.8rem}
+    /*Common Object(select)*/
+    select.selectDrop{text-indent:2rem;font-size:2.6rem;padding-right:4.8rem;background-position:calc(100% - 20px) center;height:7.7rem;border-radius:0.3rem}
+    /*Common Title*/
+    h4.commPageTitle{font-size:4.2rem}
+    h5.commSubTitle{margin:3.5rem 0;font-size:2.2rem}
+    /*Paging*/
+    .Paging{margin-top:11.5rem}
+    .Paging > a{width:4.8rem;height:4.8rem}
+    .Paging > a.first{background:url(../../../images/grac/images/common/svg/paging_first.svg) no-repeat center center;background-size:1.3rem}
+    .Paging > a.prev{background:url(../../../images/grac/images/common/svg/paging_prev.svg) no-repeat center center;background-size:1rem}
+    .Paging > a.next{background:url(../../../images/grac/images/common/svg/paging_next.svg) no-repeat center center;background-size:1rem}
+    .Paging > a.last{background:url(../../../images/grac/images/common/svg/paging_last.svg) no-repeat center center;background-size:1.3rem}
+    .Paging ul.numbers li{width:4.8rem;height:4.8rem;margin:0 1.2rem;font-size:2.4rem}
+    .Paging ul.numbers li.current{line-height:4.5rem;border-radius:0.3rem}
+    .Paging ul.numbers li a{line-height:4.8rem}
+    /*Popup*/
+    .layerPopup .popData .close{right:1rem;top:1rem;width:2.6rem;height:2.5rem;background:url(../../../images/grac/images/svg/icon_close.svg) no-repeat center center;padding:1.5rem;box-sizing:content-box;background-size:2.5rem}
+    .layerPopup .popData .close img{display:none}
+    /*공통(목록)*/
+    .ListData .tbArea{border-top:0.2rem solid #101010;padding-bottom:0;padding:0}
+    .ListData .tbArea colgroup{display:none}
+    .ListData .tbArea .k-grid-header-wrap{display:none}
+    .ListData .tbArea .k-grid-content td{border-bottom:none;font-size:2.4rem;line-height:1;text-align:left;color:#505050}
+    .ListData .tbArea .k-grid-content tr{width:100%;display:inline-block;border-bottom:1px solid #e0e0e0}
+    .ListData .tbArea .k-grid-content td.tit{font-weight:700;padding-top:4rem}
+    .ListData .tbArea .k-grid-content td.tit a{font-size:2.8rem;line-height:3.6rem}
+    .ListData .tbArea a.writeButton{position:static;margin-left:4rem;margin-top:3.5rem;width:15.6rem;line-height:7.8rem;display:inline-block;font-size:2.8rem}
+    .k-pager-wrap{margin-top:8rem}
+    /*공통-첨부파일[Kendo])*/
+    .addFile .drag_Area .area .k-upload .k-upload-button{height: 21.5rem;padding:4rem 0;}
+    .addFile .drag_Area .area .k-upload .k-upload-button input[type='file']{height: 21.5rem;}
+    .addFile .drag_Area .area .k-upload .k-dropzone em{font-size:2.4rem;height:11rem;margin-left:0}
+    .addFile .drag_Area .area .k-upload .k-dropzone em::after{border-radius:0.3rem;line-height:6.8rem;padding:0 2.5rem;font-size:2.4rem;position: absolute;left:50%;transform: translateX(-50%);bottom: 0;margin-left: 0;}
+    .addFile .drag_Area .area .k-upload .k-dropzone strong{font-size: 2.4rem;top: inherit;bottom: 1rem;left: 50%;transform: inherit;transform: translateX(-50%);right: inherit;}
+    
+    /*공통(목록)-Kendo Custom(Pager)*/
+    .k-pager-wrap>.k-link{width:4.8rem;height:4.8rem}
+    .k-pager-wrap>.k-link .k-icon{width:4.8rem;height:4.8rem}
+    .k-pager-wrap>.k-link .k-i-seek-w{background:url(../../../images/grac/images/common/svg/paging_first.svg) no-repeat center center;background-size:1.3rem}
+    .k-pager-wrap>.k-link .k-i-arrow-w{background:url(../../../images/grac/images/common/svg/paging_prev.svg) no-repeat center center;background-size:1rem}
+    .k-pager-wrap>.k-link .k-i-arrow-e{background:url(../../../images/grac/images/common/svg/paging_next.svg) no-repeat center center;background-size:1rem}
+    .k-pager-wrap>.k-link .k-i-seek-e{background:url(../../../images/grac/images/common/svg/paging_last.svg) no-repeat center center;background-size:1.3rem}
+    .k-pager-numbers li{width:4.8rem;height:4.8rem;margin:0 1.2rem;font-size:2.4rem}
+    .k-pager-numbers li span.k-state-selected{line-height:4.5rem;border-radius:0.3rem}
+    .k-pager-numbers li a{line-height:4.8rem}
+    .k-pager-wrap>.k-link.k-pager-first + .k-link{margin-right:0}
+    .k-pager-numbers + .k-link{margin-left:0}
+    /*header*/
+    header{padding:3.3rem 4rem}
+    header section{padding:0}
+    header h1.logo a img{width:38.9rem}
+    header nav{display:none}
+    header .util{display:none}
+    header .moUtil{display:inline-block;position:absolute;right:0}
+    header .moUtil li{display:inline-block;margin-left:4rem}
+    header .moUtil li:first-child{margin-left:0}
+    header .moUtil li img{width:3rem}
+    header .allMenuWrap{display:none!important}
+    .mobileNav{width:100%;height:100vh;background:#fff;position:fixed;z-index:999;left:-100%;bottom:0;display:block}
+    .mobileNav .topCnt{padding:2.5rem 3rem 2.5rem 4rem;width:100%;display:inline-block;border-bottom:1px solid #e0e0e0}
+    .mobileNav .topCnt .close{width:4.8rem;height:4.8rem;text-indent:-9999px;background:#20bdbe url(../../../images/grac/images/common/svg/icon_menu_close.svg) no-repeat center center;background-size:2.3rem;border-radius:3px;float:right}
+    .mobileNav .topCnt ul{float:left;padding-top:2rem}
+    .mobileNav .topCnt ul a{color:#505050;font-size:2.2rem;background:url(../../../images/grac/images/icon_gray_arrow.png) no-repeat right center;padding-right:2rem;margin-right:3rem}
+    .mobileNav .topCnt ul a:first-child{color:#101010;font-weight:bold;font-size:2.8rem;background:none;padding-right:0}
+    .mobileNav .topCnt ul a.userId{font-weight:400}
+    .mobileNav .topCnt ul a.userId span{font-weight:bold}
+    .mobileNav article{padding:0;overflow-y:auto;height:100%;margin-top:-4px}
+    .mobileNav .favoriteMenu{padding:5.6rem 0 0;border-top:1.5rem solid #f3f3f3}
+    .mobileNav .favoriteMenu h5{font-size:2.8rem;font-weight:bold;display:inline-block;padding:0 4rem}
+    .mobileNav .favoriteMenu > a{font-size:2.2rem;color:#505050;float:right;padding-top:0.5rem;padding:0 4rem}
+    .mobileNav .favoriteMenu > a i{padding-left:1rem}
+    .mobileNav .favoriteMenu > a img{width:1.3rem}
+    .mobileNav .favoriteMenu ul{border-bottom:1px solid #e0e0e0;height:36rem;width:100%;padding-bottom:7rem}
+    .mobileNav .favoriteMenu li{float:left;width:33.3%;margin-top:4.8rem;text-align:center}
+    .mobileNav .favoriteMenu li i{line-height:5rem}
+    .mobileNav .favoriteMenu li img{width:4.8rem}
+    .mobileNav .favoriteMenu li.add img{width:3.2rem}
+    .mobileNav .favoriteMenu li span{display:block;height:4.5rem;margin-top:2rem;color:#505050;font-size:2rem;line-height:2.5rem}
+    .mobileNav .menuList{overflow-x:hidden;overflow-y:auto;border-top:1.5rem solid #f3f3f3}
+    .mobileNav .menuList > ul > li > a{display:block;padding:3.5rem 4rem;font-size:2.8rem;font-weight:700;background:url(../../../images/grac/images/common/svg/icon_menu_down_arrow.svg) no-repeat calc(100% - 4rem) center;background-size:1.2rem}
+    .mobileNav .menuList > ul > li > a.on{color:#25bcbd}
+    .mobileNav .menuList ol{margin-top:0;background:#fafafa;padding:3.5rem 0;display:none}
+    .mobileNav .menuList ol li{padding-left:8rem}
+    .mobileNav .menuList ol li a{font-size:2.4rem;line-height:7rem}
+    .mobileNav .menuList li.all{display:none}
+    /*Location&Share*/
+    .locNshare{margin:2.8rem 0;padding:0 4rem;display:none}
+    .locNshare ul li.arrow{margin:0 1rem}
+    .locNshare a{font-size:1.6rem}
+    .locNshare a.share img{margin-right:1rem}
+    /*서브 상단컨텐츠 탭*/
+    .sub .topCnt .cntTab{height:6.2rem;margin:4rem 0}
+    .sub .topCnt .cntTab li{padding:0 2rem}
+    .sub .topCnt .cntTab a{padding:1.5rem 0;border-bottom:0.4rem solid #fff;font-size:2.8rem;font-weight:700;color:#505050}
+    .sub .topCnt .cntTab .count{width:3.4rem;line-height:3.4rem;font-size:2.8rem;right:-3.4rem}
+    /*갤러리형 목록 타입*/
+    .galleryListType div.thumb{height:43.6rem;border-radius:0}
+    .galleryListType div.thumb a{height:43.6rem}
+    .galleryListType div.thumb span.state{line-height:3.8rem;right:1.2rem;top:1.2rem;padding:0 1rem;border-radius:0.3rem;font-size:2.2rem}
+    .galleryListType i.part{margin:3rem 0 1.4rem 0;font-size:2.4rem;padding:0 4rem;font-weight:400}
+    .galleryListType a.name{height:auto;margin-bottom:3rem;font-size:3rem;line-height:4rem;padding:0 4rem}
+    .galleryListType p.lesson{font-size:2.4rem;margin-bottom:1.2rem;padding:0 4rem}
+    .galleryListType dl.info{padding:0 4rem}
+    .galleryListType dl.info dt,
+    .galleryListType dl.info dd{line-height:3.8rem;font-size:2.4rem}
+    .galleryListType dl.info dt{width:11.5rem}
+    .galleryListType dl.info dd{width:calc(100% - 11.5rem);font-weight:400}
+    .galleryListType dl.info dd span.point{padding-left:3.5rem;background:url(../../../images/grac/images/svg/icon_star_s.svg) no-repeat left center;background-size:2.5rem}
+    .galleryListType dl.info dd.person i.icon{padding-left:4.4rem}
+    .galleryListType div.info{padding:0 4rem}
+    .galleryListType div.info dt{line-height:4.4rem;margin-right:0;font-size:2.2rem}
+    .galleryListType div.info dd{line-height:4.4rem;font-size:2.2rem}
+    .galleryListType div.info dl.person dt{width:15.5rem;padding-left:4.5rem;background:url(../../../images/grac/images/svg/icon_application_1.svg) no-repeat left center;background-size:2.4rem}
+    .galleryListType div.info dl.point1{width:50%}
+    .galleryListType div.info dl.point1 dt{width:15.5rem;padding-left:4.5rem;background:url(../../../images/grac/images/svg/icon_check.svg) no-repeat left center;background-size:2.4rem}
+    .galleryListType div.info dl.point1 span.point{padding-left:3.5rem;background:url(../../../images/grac/images/svg/icon_star_s_off.svg) no-repeat left center;background-size:2.6rem}
+    .galleryListType div.info dl.point1 span.point.on{background:url(../../../images/grac/images/svg/icon_star_s.svg) no-repeat left center;background-size:2.6rem}
+    .galleryListType div.info dl.point2{width:50%;float:right;margin:0}
+    .galleryListType div.info dl.point2 dt{width:11rem;text-align:center}
+    .galleryListType div.info dl.point2 span.point{padding-left:4.5rem;background:url(../../../images/grac/images/svg/icon_star_s_blue.svg) no-repeat left center;background-size:2.6rem}
+    .galleryListType div.info dl.point2 dd a{line-height:7.2rem;border-radius:0.3rem;padding:0 3.4rem;top:-1.6rem;font-size:2.4rem}
+    /*footer*/
+    footer .familySite{width:100%;position:relative}
+    footer .familySite select{width:100%;line-height:5.5rem;font-size:2rem;background-size:1.4rem;right:auto}
+    footer .termsLink{padding:4.8rem 0 2.7rem}
+    footer .termsLink a{font-size:2rem}
+    footer article > p{line-height:2.6rem;font-size:2rem}
+    footer article > p span{display:block;line-height:2.7rem}
+    footer article > p.adrs{margin-bottom:1.4rem}
+}

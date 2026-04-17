@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>게임물관리위원회</title>
+    <link href="http://grac.podosoftware.com/css/solution/reset.css" rel="stylesheet" type="text/css">
+    <link href="http://grac.podosoftware.com/css/solution/solution_ui.css" rel="stylesheet" type="text/css">
+    <link href="http://grac.podosoftware.com/css/podo.ui/podo.ui.css" rel="stylesheet" type="text/css">
+    <link href="http://grac.podosoftware.com/css/kendo/2015.3.930/kendo.common.min.css" rel="stylesheet" type="text/css">
+    <link href="http://grac.podosoftware.com/css/kendo/2015.3.930/kendo.bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://grac.podosoftware.com/css/kendo/2015.3.930/kendo.dataviz.min.css" rel="stylesheet" type="text/css">
+    <link href="http://grac.podosoftware.com/css/kendo/2015.3.930/kendo.dataviz.bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <style type="text/css">
+        .identify_popup_area{width:100%;height:100%;position:relative;font-family:'Nanum Myeongjo', serif;;font-size:28px;font-weight:800;padding:0;background:#fff;color:#000;display:block}
+	    .identify_popup_area .identify_data_area{width:100%;height:100%;padding:1px;position:relative;z-index:9;display:inline-block}
+	    .identify_popup_area .identify_data_area .bg_logo{position:absolute;width:50%;text-align:center;left:50%;top:50%;margin-left:-25%;opacity:0.2;filter:alpha(opacity = 20)}
+        .identify_popup_area .identify_data_area .bg_logo img{width:100%;max-width:600px}
+	    .identify_popup_area .identify_data_area .identify_data{width:100%;float:left;padding:4.8% 5.3% 7.9% 5.3%;border:4px solid #606E87;border-radius:5px;position:absolute;z-index:99}
+	    .identify_popup_area .identify_data_area .identify_data .number{width:100%;font-size:18px;float:left;line-height:24px}
+	    .identify_popup_area .identify_data_area .identify_data .number span{margin:0 10px}
+	    .identify_popup_area .identify_data_area .identify_data .main_title{width:100%;float:left;font-size:56px;text-align:center;margin:15% 0 12.5% 0;line-height:52px}
+	    .identify_popup_area .identify_data_area .identify_data .main_title span{padding:0 25px}
+	    .identify_popup_area .identify_data_area .identify_data .user_info{width:100%;float:left;text-align:right}
+	    .identify_popup_area .identify_data_area .identify_data .user_info ul{width:100%;float:right}
+	    .identify_popup_area .identify_data_area .identify_data .user_info ul li{width:100%;float:left;text-align:right}
+	    .identify_popup_area .identify_data_area .identify_data .user_info ul li.univ{margin-bottom:10px}
+	    .identify_popup_area .identify_data_area .identify_data .user_info ul li.univ span{margin-left:15px;margin-left:10px}
+	    .identify_popup_area .identify_data_area .identify_data .user_info ul li.name{letter-spacing:20px;font-size:32px;line-height:40px}
+	    .identify_popup_area .identify_data_area .identify_data .content_text{width:100%;height: 170px;float:left;font-size:24px;line-height:36px;text-align:left;margin:10% 0}
+	    .identify_popup_area .identify_data_area .identify_data .detail_text{font-size:22px;line-height:26px}
+	    .identify_popup_area .identify_data_area .identify_data .detail_text table{width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed}
+	    .identify_popup_area .identify_data_area .identify_data .detail_text table tr th{padding:5px 0;text-align:left;font-size:15px;line-height:26px}
+	    /* .identify_popup_area .identify_data_area .identify_data .detail_text table tr.period th{letter-spacing:4px}
+	    .identify_popup_area .identify_data_area .identify_data .detail_text table tr.time th{letter-spacing:4px} */
+	    .identify_popup_area .identify_data_area .identify_data .detail_text table tr td{padding:5px 10px;font-size:20px;line-height:26px;text-align:left}
+	    .identify_popup_area .identify_data_area .identify_data .identify_date{width:100%;float:left;margin:0 0 10% 0;}
+	    .identify_popup_area .identify_data_area .identify_data .identify_date ul{width:100%;text-align:center}
+	    .identify_popup_area .identify_data_area .identify_data .identify_date ul li{display:inline-block;margin:0 10px;font-size:24px;}
+	    .identify_popup_area .identify_data_area .identify_data .identify_center_name{width:100%;text-align:center;font-size:40px;line-height:52px}
+        .identify_popup_area .identify_bg_grac_logo{position: absolute;top:50%;left:50%;transform:translate(-50%, -50%);}
+	</style>
+</head>
+<body>
+    <div class="identify_popup_area" style="max-width:800px;">
+        <div class="identify_data_area">
+            <div class="identify_data">
+                <div class="number" align="left">
+                	<div style="position: absolute;top:2.8%;left:5.3%;font-size:16px;">제<span id="cmplt_num"></span>호</div>
+                </div>
+                <div class="main_title" align="center">교육 이수증</div>
+                <div class="user_info" style="display: none;">
+                    <ul>
+                        <li class="univ"><span id="time_college"></span><span id="dvs_name">sad</span></li>
+                        <li class="name" id="name">박포도</li>
+                    </ul>
+                </div>
+                <div class="detail_text">
+                    <table summary="내용상세" align="center">
+                        <colgroup>
+                            <col width="14%">
+                            <col width="36%">
+                            <col width="14%">
+                            <col width="36%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="col">성명</th>
+                                <td scope="col" id="name">박포도</td>
+                                <th scope="col">사업자명</th>
+                                <td scope="col">oo전자</td>
+                            </tr>
+                            <tr>
+                                <th scope="col">주소</th>
+                                <td scope="col" colspan="3">부산시 해운대구 센텀서로 39</td>
+                            </tr>
+                            <tr>
+                                <th scope="col">구분</th>
+                                <td scope="col" colspan="3">등급분류 책임자 or 전담인력</td>
+                            </tr>
+                            <tr class="program">
+                                <th scope="col">교육과정</th>
+                                <td scope="col" colspan="3" id="subject_name2">자체등급분류사업자 교육</td>
+                            </tr>
+                            <tr class="period">
+                                <th scope="col">교육기간</th>
+                                <td scope="col" colspan="3" id="edutime">2021.08.22 ~ 2021.08.28</td>
+                            </tr>
+                            <tr>
+                                <th scope="col">교육시간</th>
+                                <td scope="col" colspan="3">3시간</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="content_text" align="center">
+					위 사람은 「게임산업진흥에 관한 법률 제21조의 제 37조 및 시행규칙 제9조의 5」에 따라 게임물관리위원회 교육센터에서 실시하는 ‘자체등급분류사업자 교육’을 이수하였음을 증명합니다.
+                </div>
+                <div class="identify_date" align="center">
+                    <ul>
+                        <li class="year"><span id="to_yyyy">2021</span>년</li>
+                        <li class="month"><span id="to_month">09</span>월</li>
+                        <li class="day"><span id="to_day">02</span>일</li>
+                    </ul>
+                </div>
+                <div class="bg_logo3">
+	                <div class="identify_center_name" id="centername2" style="width: 100%;float: left;position: relative;"></div>
+	                <div style="width: 47%;float: right;"><img src="/comm/image_view.do?objectType=16&amp;objectId=1&amp;thumbnail=true" onerror="this.style.display='none'" style="width: 28%; margin-top: -70px; display: none;"></div>
+	            </div>
+                <div class="identify_center_name" id="centername2" style="width: 100%;float: left;position: relative;">게임물관리위원회 위원장</div>
+            </div>
+            <div class="bg_logo"><img src="/comm/image_view.do?objectType=12&amp;objectId=1&amp;thumbnail=true" onerror="this.style.display='none'" style="display: none;"></div>
+        </div>
+        <div class="identify_bg_grac_logo"><img src="../images/grac/images/classIsu_logo.png"/></div>
+    </div>
+</body>
+</html>

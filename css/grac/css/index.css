@@ -1,0 +1,231 @@
+﻿@charset "utf-8";
+/*Top Content*/
+.mainTopContent{position:relative}
+/*Main Banner*/
+.mainBanner{position:relative}
+.mainBanner .flex-viewport{width:100%;overflow:hidden}
+.mainBanner .banData .slides li{height:680px;background-position:center center;background-size:cover;background-repeat:no-repeat;position:relative}
+.mainBanner .campain{text-align:left;position:absolute;left:12%;top:120px;color:#fff}
+.mainBanner .campain p.t1{font-size:18px;font-weight:700;padding-bottom:10px;display:inline-block;border-bottom:1px solid #fff}
+.mainBanner .campain p.t2{font-size:54px;line-height:74px;margin:34px 0 20px 0}
+.mainBanner .campain p.t3{font-size:18px}
+.mainBanner .controller{position:absolute;left:12%;top:458px}
+.mainBanner .controller .banEA{display:inline-block;white-space:nowrap;vertical-align:middle;margin-top:-3px}
+.mainBanner .controller .banEA > div{display:inline-block;font-size:18px;color:#ccc}
+.mainBanner .controller .banEA > span{display:inline-block;font-size:12px;color:#ccc}
+.mainBanner .controller .flex-control-nav{font-size:24px}
+.mainBanner .controller .flex-control-nav a{display:none}
+.mainBanner .controller .flex-control-nav a.flex-active{display:block}
+.mainBanner .controller .flex-control-nav a span{color:#fff;font-weight:700}
+.mainBanner .controller .lineBul{width:300px;height:1px;display:inline-block;margin-left:12px;vertical-align:top}
+.mainBanner .controller .lineBul ul{width:100%;height:1px;display:inline-block;background:rgba(255,255,255,0.3)}
+.mainBanner .controller .lineBul li{height:1px;float:left;position:relative;text-indent:-9999px}
+.mainBanner .controller .lineBul li span{width:0;height:1px;position:absolute;left:0;top:0;background:#fff}
+.mainBanner .controller .lineBul li.end span{width:100%!important}
+.mainBanner .controller .ctrlbtn{display:inline-block;margin-left:20px;vertical-align:middle}
+.mainBanner .controller .ctrlbtn a{display:inline-block;vertical-align:middle}
+.mainBanner .controller .ctrlbtn a.pause,
+.mainBanner .controller .ctrlbtn a.play{margin:0 20px}
+.mainBanner .controller .ctrlbtn a.play{display:none}
+/*Favorite Menu Setup*/
+.favMenuSetup{width:610px;height:100%;position:absolute;z-index:99;top:0}
+.favMenuSetup a.menuBtn{width:80px;height:100px;background:#4f74cb;position:absolute;text-align:center;left:-80px;top:50%;transform:translateY(-50%);z-index:9;border-radius:3px 0 0 3px}
+.favMenuSetup a.menuBtn p{width:100%;position:absolute;left:0;top:50%;transform:translateY(-50%)}
+.favMenuSetup a.menuBtn p span{display:block;font-size:16px;font-weight:700;color:#fff;margin-top:20px}
+.favMenuSetup .myMenu{width:100%;height:100%;background:url(../../../images/grac/images/fav_menu_bg.jpg) no-repeat center center;background-size:cover;position:relative;padding:95px 59px 0 59px}
+.favMenuSetup .myMenu h5,
+.favMenuSetup .myMenu h6{text-align:left;padding:0 11px}
+.favMenuSetup .myMenu h5{font-size:28px;font-weight:700;color:#fff}
+.favMenuSetup .myMenu h6{font-size:16px;font-weight:400;color:#dfddf7;margin:20px 0 60px 0}
+.favMenuSetup .myMenu ul.list{width:100%;display:inline-block}
+.favMenuSetup .myMenu ul.list li{width:33.3333%;float:left;padding:0 11px;margin-bottom:50px;text-align:center}
+.favMenuSetup .myMenu ul.list li span{display:block;height:45px;font-size:16px;color:#fff;line-height:1.2;margin-top:20px}
+.favMenuSetup .myMenu ul.list li:nth-child(4n){margin-bottom:0}
+.favMenuSetup .myMenu a.menuAdd{width:180px;line-height:48px;color:#fff;font-size:16px;border-radius:3px;border:1px solid #908cd3;display:inline-block;position:absolute;left:50%;transform:translateX(-50%);bottom:100px}
+.favMenuSetup .myMenu a.menuAdd img{margin-left:10px;vertical-align:use-script}
+/*Menu Plus*/
+.menuPlusPop{display:none}
+.menuPlusPop .popData{padding:60px;text-align:center;width:1000px}
+.menuPlusPop .popData h4{font-size:28px;font-weight:bold;text-align:left}
+.menuPlusPop .popData p{font-size:16px;color:#505050;margin-top:28px;display:block;text-align:left;border-bottom:2px solid #101010;margin-right:20px;padding-bottom:20px}
+.menuPlusPop .popData .list{height:500px;overflow-y:auto;margin-bottom:60px;padding-top:40px}
+.menuPlusPop .popData .list::-webkit-scrollbar{width:7px}
+.menuPlusPop .popData .list::-webkit-scrollbar-track{background:#ccc; border-radius:5px}
+.menuPlusPop .popData .list::-webkit-scrollbar-thumb{background:#b7b7b7; border-radius:5px}
+.menuPlusPop .popData .list::-webkit-scrollbar-thumb:hover{background:#999; border-radius:5px}
+.menuPlusPop article{display:inline-block;width:100%;table-layout:fixed}
+.menuPlusPop article li.tit{width:100%;font-size:22px;font-weight:bold;margin-bottom:40px}
+.menuPlusPop article ul li{width:100%;display: inline-block;}
+.menuPlusPop article ul li a{float:left;width:25%;margin-bottom:40px}
+.menuPlusPop article a dl{width:100%;display:table}
+.menuPlusPop article dt{width:48px}
+.menuPlusPop article dt,.menuPlusPop  div article dd{display:table-cell;vertical-align:middle}
+.menuPlusPop article dt img.on{display:none}
+.menuPlusPop article dd{padding-left:20px;font-size:16px;color:#505050;line-height:19px}
+.menuPlusPop article a:hover dt img.off{display:none}
+.menuPlusPop article a:hover dt img.on{display:inline-block}
+.menuPlusPop article a:hover dd{color:#4f74cb}
+.menuPlusPop article.other ul{float:left;width:33.3%}
+.menuPlusPop article.other a{width:100%}
+.menuPlusPop button{width:200px;height:60px;border:none;background:none;font-size:18px;font-weight:bold;border-radius:3px;margin:0 10px}
+.menuPlusPop button.cancel{border:1px solid #e0e0e0;background:#fff}
+.menuPlusPop button.save{background:#20bdbe;color:#fff}
+/*Common(idx)*/
+.idx .sub_tit{font-size:68px;font-weight:800;color:#101010}
+.idx .sub_tit span{color:#20bdbe}
+/*Grac Education*/
+.education{padding:120px 0}
+.education article>p{font-size:16px;color:#505050;margin-bottom:20px}
+.education .directMenu{margin:80px 0 120px;display:inline-block;width:100%}
+.education .directMenu a{width:25%;height:328px;padding:62px 0;float:left;text-align:center;transition:all .3s;-webkit-transition:all .3s}
+.education .directMenu a:hover{box-shadow:10px 10px 15px rgba(0,0,0,.15)}
+.education .directMenu a img{width:48px}
+.education .directMenu .textArea{padding-top:58px;position:relative}
+.education .directMenu .textArea::before{content:'';position:absolute;height:2px;width:24px;background:#101010;left:50%;top:28px;transform:translateX(-50%)}
+.education .directMenu .textArea span{display:block;color:#101010;font-size:22px;font-weight:bold}
+.education .directMenu .textArea p{line-height:22px;margin-top:18px;font-size:16px;color:#767676}
+.education .otherDirect{width:100%;background:#f4f4f4}
+.education ul{display:inline-block;width:100%;background:#f4f4f4;padding:33px 0}
+.education li{float:left;text-align:center;width:33.3%;position:relative}
+.education li:nth-child(2){border-left:1px solid #e0e0e0;border-right:1px solid #e0e0e0}
+.education li img{width:27px}
+.education li span{display:block;color:#101010;font-size:22px;font-weight:bold;margin:24px 0 10px}
+.education li p{font-size:16px;color:#767676}
+.education li a{font-size:16px;color:#767676;background:url(../../../images/grac/images/icon_arrow_left.png) no-repeat right center;padding-right:26px;background-size:6px}
+/*Grac Curriculum*/
+.mainCurriculum > p{font-size:16px;color:#505050;margin-bottom:20px;text-align:center}
+.mainCurriculum h2{text-align:center;margin-bottom:80px}
+.mainCurriculum .slideArea{margin-bottom:120px;position:relative}
+.mainCurriculum .slideArea h5{font-size:28px;color:#101010;font-weight:bold}
+.mainCurriculum .slideArea .more{position:absolute;right:0;top:0}
+.mainCurriculum .slideArea .more img{width:18px}
+.mainCurriculum .slide_wrap{margin-top:28px}
+.mainCurriculum .slide_wrap .swiper-slide{height:408px;position:relative}
+.mainCurriculum .slide_wrap .swiper-slide > a{display:block}
+.mainCurriculum .slide_wrap div.thumb{height:244px;border-radius:3px;overflow:hidden;background-position:center center;background-repeat:no-repeat;background-size:cover;position:relative}
+.mainCurriculum .slide_wrap div.thumb span{line-height:28px;position:absolute;right:8px;top:8px;color:#fff;padding:0 6px;border-radius:3px}
+.mainCurriculum .slide_wrap i.part{width:100%;display:inline-block;margin:19px 0 7px 0;color:#767676;font-weight:700}
+.mainCurriculum .slide_wrap p.name{height:45px;margin-bottom:15px;font-size:18px;font-weight:700;line-height:21px;overflow:hidden;display:block; display:-webkit-box;text-overflow:ellipsis;-ms-text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.mainCurriculum .slide_wrap p.lesson{font-size:16px;font-weight:700;color:#2ac0c1;margin-bottom:8px}
+.mainCurriculum .slide_wrap .swiper-slide dl{width:100%;display:inline-block}
+.mainCurriculum .slide_wrap .swiper-slide dt,
+.mainCurriculum .slide_wrap .swiper-slide dd{color:#505050;float:left;line-height:21px}
+.mainCurriculum .slide_wrap .swiper-slide dt{width:65px}
+.mainCurriculum .slide_wrap .swiper-slide dd{width:calc(100% - 65px);font-weight:700}
+.mainCurriculum .slide_wrap .swiper-slide dd span.point{float:right;padding-left:20px;background:url(../../../images/grac/images/icon_star_s.png) no-repeat left center;color:#767676}
+.mainCurriculum .slide_wrap .swiper-slide dd span.point b{font-weight:800;color:#101010}
+.mainCurriculum .swiper-button-prev, .mainCurriculum .swiper-button-next{background-image:none;margin-top:0;top:32.5%}
+.mainCurriculum .swiper-button-prev{left:-24px;width:48px}
+.mainCurriculum .swiper-button-next{right:-24px;width:48px}
+.mainCurriculum .cntl img{width:100%}
+.mainCurriculum .cntl.disable{opacity:0}
+.mainCurriculum .cntl.active{opacity:1}
+.mainCurriculum div.thumb span.law{background:#ff6b68}
+.mainCurriculum div.thumb span.job{background:#1db8ab}
+.mainCurriculum div.thumb span.free{background:#5659f4}
+.mainCurriculum div.no_data{width:100%;height:405px;position:relative;background:#fafafa;margin-top:28px}
+.mainCurriculum div.no_data h6{position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);font-size:26px;font-weight:700;color:#bababa;padding-top:95px;background:url(../../../images/grac/images/icon_none_data.png) no-repeat center top;}
+
+
+@media all and (max-width:1330px){
+    /*Grac Curriculum*/
+    .mainCurriculum .slideArea .more{right:20px}
+    .mainCurriculum .slideArea{padding:0 24px;width:100%}
+    .mainCurriculum .swiper-button-prev{left:0}
+    .mainCurriculum .swiper-button-next{right:0}
+}
+@media all and (max-width:1024px){
+    .menuPlusPop .popData{width:90%}
+    .menuPlusPop article li.tit{font-size:18px}
+    .menuPlusPop article a{width:33.3%}
+    .menuPlusPop article dt, .menuPlusPop div article dd{display:block;text-align:center}
+    .menuPlusPop article dd{height:35px;margin-top:7px}
+    .menuPlusPop article.other li.tit{text-align:center}
+}
+@media all and (max-width:1000px){
+    .idx .sub_tit{text-align:center}
+    .education article>p{text-align:center}
+    .education .directMenu a{width:50%}
+    .mainCurriculum .swiper-button-prev, .mainCurriculum .swiper-button-next{display:none}
+}
+@media all and (max-width:812px){
+    /*Main Banner*/
+    .mainBanner .banData .slides li{height:80rem}
+    .mainBanner .campain{text-align:center;position:static;margin-top:15rem}
+    .mainBanner .campain p.t1{font-size:2.4rem;padding-bottom:1rem}
+    .mainBanner .campain p.t2{font-size:5.4rem;line-height:8.6rem;margin:4.6rem 0 2.8rem 0}
+    .mainBanner .campain p.t3{font-size:2rem}
+    .mainBanner .controller{width:100%;left:0;top:inherit;bottom:23.5rem}
+    .mainBanner .controller .flex-control-nav{font-size:2.8rem}
+    .mainBanner .controller .banEA{margin-top:-3px}
+    .mainBanner .controller .banEA > div{font-size:2rem}
+    .mainBanner .controller .banEA > span{font-size:2rem}
+    .mainBanner .controller .lineBul{width:30rem;margin-left:1.2rem}
+    .mainBanner .controller .ctrlbtn{margin-left:2rem}
+    .mainBanner .controller .ctrlbtn a.pause, 
+    .mainBanner .controller .ctrlbtn a.play{margin:0 2rem}
+    .mainBanner .controller .ctrlbtn a img{width:1rem}
+    .mainBanner .controller .ctrlbtn a.pause img{width:0.8rem}
+    /*Menu Plus*/
+    .menuPlusPop .popData{width:100%;height:100%;padding:3.3rem 0}
+    .menuPlusPop .popData .close{background:url(../../../images/grac/images/svg/icon_back_arrow.svg) no-repeat left center;left:4rem;right:auto;top:3.8rem;padding:0 1.5rem}
+    .menuPlusPop .popData h4{text-align:center;font-size:3.4rem;border-bottom:1px solid #e0e0e0;padding-bottom:3.3rem}
+    .menuPlusPop .popData p{font-size:2.4rem;margin-top:4rem;margin-right:0;padding-left:4rem;padding-bottom:2.6rem}
+    .menuPlusPop .popData .list{height:100%;margin-bottom:0;padding-top:4.8rem;padding-bottom:33rem}
+    .menuPlusPop .popData .list::-webkit-scrollbar{display:none}
+    .menuPlusPop article li.tit{font-size:2.8rem;margin-bottom:4.3rem}
+    .menuPlusPop article a{width:50%;margin-bottom:6rem}
+    .menuPlusPop article dt, .menuPlusPop div article dd{display:inline-block;text-align:left}
+    .menuPlusPop article dt img{height:4.7rem}
+    .menuPlusPop article dd{padding-left:1.7rem;font-size:2.2rem;line-height:2.6rem;height:auto;margin-top:0}
+    .menuPlusPop article.other li.tit{text-align:left}
+    .menuPlusPop .btnArea{bottom: 0;background: #fff;height: 23.6rem;position: absolute;width: 100%;box-shadow:0 0 3rem rgba(65,65,65,0.2)}
+    .menuPlusPop button{width:63.9rem;position:absolute;bottom:0;margin:0;left:50%;transform:translateX(-50%);height:8.8rem;font-size:2.8rem}
+    .menuPlusPop button.save{top:2rem}
+    .menuPlusPop button.cancel{bottom:2rem}
+    .menuPlusPop article.other ul{width:50%}
+    .favMenuSetup{display:none}
+    /*Grac Education*/
+    .idx .sub_tit{font-size:6.8rem}
+    .education{padding:12rem 0}
+    .education article>p{font-size:2.4rem;margin-bottom:2.8rem}
+    .education .directMenu{margin:8rem 0 12rem}
+    .education .directMenu a{float:none;width:100%;height:auto;text-align:left;padding:0 5.5rem;display:table;table-layout:fixed;margin-bottom:8rem}
+    .education .directMenu a:last-child{margin-bottom:0}
+    .education .directMenu a:hover{box-shadow:none}
+    .education .directMenu div{display:table-cell;vertical-align:top}
+    .education .directMenu div:first-child{width:6.5rem}
+    .education .directMenu div img{width:100%}
+    .education .directMenu .textArea{padding-top:0;padding-left:4rem}
+    .education .directMenu .textArea::before{display:none}
+    .education .directMenu .textArea span{font-size:2.8rem}
+    .education .directMenu .textArea p{margin-top:2.4rem;line-height:3.3rem;font-size:2.4rem}
+    .education .directMenu .textArea p br{display:none}
+    .education ul{padding:7rem 0}
+    .education li:nth-child(2){border:none}
+    .education li img{width:4.8rem}
+    .education li span{font-size:2.6rem;margin:3.2rem 0 1.8rem}
+    .education li p{font-size:2.2rem}
+    .education li a{font-size:2.2rem;background-size:0.8rem;padding-right:2.7rem}
+    /*Grac Curriculum*/
+    .mainCurriculum p{font-size:2.4rem;margin-bottom:2.8rem}
+    .mainCurriculum h2{font-size:6.8rem;margin-bottom:8rem}
+    .mainCurriculum .slideArea {margin-bottom:12rem}
+    .mainCurriculum .slideArea h5{font-size:3.4rem}
+    .mainCurriculum .slideArea .more{width:2.4rem;right:4rem}
+    .mainCurriculum .slideArea .more img{width:100%}
+    .mainCurriculum .slide_wrap{margin-top:2.4rem}
+    .mainCurriculum .slide_wrap .swiper-slide{height:auto}
+    .mainCurriculum .slide_wrap div.thumb{height:32.4rem}
+    .mainCurriculum .slide_wrap div.thumb span{line-height:3.8rem;right:1.2rem;font-size:2.2rem;top:1.2rem;padding:0 1.1rem;border-radius:0.3rem}
+    .mainCurriculum .slide_wrap i.part{margin:2.8rem 0 2.3rem 0;font-size:2.4rem}
+    .mainCurriculum .slide_wrap p.name{height:6.4rem;margin-bottom:3.3rem;font-size:2.8rem;line-height:3.2rem}
+    .mainCurriculum .slide_wrap p.lesson{font-size:2.2rem;margin-bottom:1.4rem}
+    .mainCurriculum .slide_wrap .swiper-slide dt,
+    .mainCurriculum .slide_wrap .swiper-slide dd{line-height:3.2rem;font-size:2.2rem}
+    .mainCurriculum .slide_wrap .swiper-slide dt{width:10.5rem}
+    .mainCurriculum .slide_wrap .swiper-slide dd{width:calc(100% - 10.5rem)}
+    .mainCurriculum .slide_wrap .swiper-slide dd span.point{padding-left:3.2rem;background:url(../../../images/grac/images/icon_star_b.png) no-repeat left center;background-size:2.1rem}
+    .mainCurriculum div.no_data{margin-top:2.4rem;height:58.8rem;}
+    .mainCurriculum div.no_data h6{width:100%;text-align:center;font-size:2.6rem;padding-top:9.5rem;background:url(../../../images/grac/images/icon_none_data.png) no-repeat center top;background-size:4.5rem;}
+}
